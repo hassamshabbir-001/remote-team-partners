@@ -9,72 +9,81 @@ const tick = "✓";
   description="Remote Team Partners builds dedicated remote teams for US businesses. Staffing, recruitment, accounting, HR, payroll and full team management, one predictable monthly investment."
   path="/"
 >
-  <!-- HERO -->
+  <!-- HERO: asymmetric left-aligned -->
   <section class="hero">
     <div class="wrap">
-      <span class="eyebrow"><span class="dot"></span> Now hiring for US businesses</span>
-      <h1>Build your <span class="hl">dedicated remote team</span>, without the hiring headache.</h1>
-      <p class="sub">We recruit, employ, onboard, and manage exceptional remote professionals who work exclusively for you. You lead the work, we handle everything behind it.</p>
-      <div class="hero-ctas">
-        <a href="#cta" class="btn btn-yellow">Book a Discovery Call <span class="arr-c" set:html={arrow}></span></a>
-        <a href="#pricing" class="btn btn-white">See Pricing <span class="arr-c" set:html={arrow}></span></a>
-      </div>
-    </div>
-    <div class="hero-photo">
-      <div class="ph">
-        <img src="/images/remote-team-video-call.webp" alt="Dedicated remote team on a video call from modern home offices" width="1200" height="514" loading="eager" fetchpriority="high" />
-      </div>
-      <div class="hero-floats">
-        <div class="float-card fc-1">
-          <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
-          <div><strong>5 weeks</strong><span>from first call to working team</span></div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="dot"></span> Now hiring for US businesses</span>
+          <h1>Build your <span class="hl">dedicated remote team</span>, without the hiring headache.</h1>
+          <p class="sub">We recruit, employ, onboard, and manage exceptional remote professionals who work exclusively for you. You lead the work, we handle everything behind it.</p>
+          <div class="hero-ctas">
+            <a href="#cta" class="btn btn-blue">Book a Discovery Call <span class="arr-c" set:html={arrow}></span></a>
+            <a href="#pricing" class="btn btn-white">See Pricing <span class="arr-c" set:html={arrow}></span></a>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-item"><strong>5 weeks</strong><span>first call to working team</span></div>
+            <div class="proof-item"><strong>20+ roles</strong><span>one partner, every function</span></div>
+            <div class="proof-item"><strong>1 invoice</strong><span>predictable monthly cost</span></div>
+          </div>
         </div>
-        <div class="float-card fc-2">
-          <span class="ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/></svg></span>
-          <div><strong>20+ roles</strong><span>one partner for every function</span></div>
+        <div class="hero-media">
+          <div class="ph">
+            <img src="/images/remote-team-video-call.webp" alt="Dedicated remote team on a video call from modern home offices" width="880" height="560" loading="eager" fetchpriority="high" />
+          </div>
+          <div class="float-card fc-1">
+            <span class="ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/></svg></span>
+            <div><strong>Exclusively yours</strong><span>your team works only for you</span></div>
+          </div>
+          <div class="float-card fc-2">
+            <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <div><strong>Replacement guarantee</strong><span>every engagement covered</span></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES -->
+  <!-- SERVICES: asymmetric bento -->
   <section class="sec" id="services">
     <div class="wrap">
-      <div class="sec-head">
+      <div class="sec-head left">
         <span class="eyebrow"><span class="dot"></span> Services</span>
         <h2>Every role your business needs, remotely.</h2>
         <p>If a role can be performed remotely, we can build the team to support it.</p>
       </div>
-      <div class="svc-grid">
-        <article class="svc-card">
-          <div class="svc-img"><img src="/images/staffing-recruitment-services.webp" alt="Staffing and recruitment services, professional job interview" width="640" height="400" loading="lazy" /></div>
-          <h3>Staffing &amp; Recruitment</h3>
-          <p>Targeted sourcing, thorough vetting, and client interviews. We present exceptional candidates, not long lists.</p>
+      <div class="bento">
+        <article class="svc-card svc-lead">
+          <div class="svc-img"><img src="/images/staffing-recruitment-services.webp" alt="Staffing and recruitment services, professional job interview" width="800" height="500" loading="lazy" /></div>
+          <div>
+            <h3>Staffing &amp; Recruitment</h3>
+            <p>Targeted sourcing, thorough vetting, and client interviews. We invest the time to understand your requirements, identify the right talent, and present only the most qualified professionals. We would rather present three exceptional candidates than thirty average ones.</p>
+          </div>
         </article>
-        <article class="svc-card">
-          <div class="svc-img"><img src="/images/accounting-finance-services.webp" alt="Accounting and finance services, professional reviewing financial documents" width="640" height="400" loading="lazy" /></div>
+        <article class="svc-card svc-mid">
+          <div class="svc-img"><img src="/images/accounting-finance-services.webp" alt="Accounting and finance services, professional reviewing financial documents" width="640" height="360" loading="lazy" /></div>
           <h3>Accounting &amp; Finance</h3>
           <p>Bookkeepers, accountants, and finance professionals who keep your numbers accurate and on time.</p>
         </article>
-        <article class="svc-card">
-          <div class="svc-img"><img src="/images/customer-support-services.webp" alt="Customer support services, friendly specialist with headset" width="640" height="400" loading="lazy" /></div>
+        <article class="svc-card svc-mid">
+          <div class="svc-img"><img src="/images/customer-support-services.webp" alt="Customer support services, friendly specialist with headset" width="640" height="360" loading="lazy" /></div>
           <h3>Customer Support</h3>
           <p>Dedicated support specialists trained on your product, your tone, and your customers.</p>
         </article>
-        <article class="svc-card">
-          <div class="svc-img"><img src="/images/admin-operations-services.webp" alt="Admin and operations services, organized modern office workspace" width="640" height="400" loading="lazy" /></div>
+        <article class="svc-card svc-sm">
+          <div class="svc-img"><img src="/images/admin-operations-services.webp" alt="Admin and operations services, organized modern office workspace" width="480" height="270" loading="lazy" /></div>
           <h3>Admin &amp; Operations</h3>
-          <p>Executive assistants, operations coordinators, and data specialists who keep things running.</p>
+          <p>Executive assistants and operations coordinators who keep things running.</p>
         </article>
-        <article class="svc-card">
-          <div class="svc-img"><img src="/images/it-software-services.webp" alt="IT and software services, developer writing code" width="640" height="400" loading="lazy" /></div>
+        <article class="svc-card svc-sm">
+          <div class="svc-img"><img src="/images/it-software-services.webp" alt="IT and software services, developer writing code" width="480" height="270" loading="lazy" /></div>
           <h3>IT &amp; Software</h3>
-          <p>Developers, IT support, and technical specialists vetted for skill and reliability.</p>
+          <p>Developers and IT support vetted for skill and reliability.</p>
         </article>
-        <article class="svc-card">
-          <div class="svc-img"><img src="/images/marketing-sales-services.webp" alt="Marketing and sales services, team strategy meeting" width="640" height="400" loading="lazy" /></div>
+        <article class="svc-card svc-sm">
+          <div class="svc-img"><img src="/images/marketing-sales-services.webp" alt="Marketing and sales services, team strategy meeting" width="480" height="270" loading="lazy" /></div>
           <h3>Marketing &amp; Sales</h3>
-          <p>Marketers, designers, and sales development reps who grow your pipeline.</p>
+          <p>Marketers, designers, and sales reps who grow your pipeline.</p>
         </article>
       </div>
       <div class="roles">
@@ -92,8 +101,8 @@ const tick = "✓";
     </div>
   </section>
 
-  <!-- YOU CONTROL / WE MANAGE -->
-  <div class="band-yellow">
+  <!-- MODEL -->
+  <div class="band-blue">
     <div class="wrap">
       <div style="text-align:center">
         <span class="eyebrow"><span class="dot"></span> The model</span>
@@ -110,7 +119,7 @@ const tick = "✓";
             <li><span class="tick">{tick}</span> Training and development direction</li>
           </ul>
         </div>
-        <div class="duo-card duo-black">
+        <div class="duo-card duo-dark">
           <h3>We manage</h3>
           <ul>
             <li><span class="tick">{tick}</span> Recruitment and candidate vetting</li>
@@ -123,21 +132,21 @@ const tick = "✓";
     </div>
   </div>
 
-  <!-- PROCESS -->
+  <!-- PROCESS: horizontal rows -->
   <div class="band-black" id="process">
     <div class="wrap">
-      <div style="text-align:center">
+      <div class="band-head">
         <span class="eyebrow on-dark"><span class="dot"></span> How it works</span>
+        <h2 style="margin-top:20px">From first call to long-term team.</h2>
+        <p class="lede">You always know what comes next. Here is exactly what your first five weeks look like.</p>
       </div>
-      <h2>From first call to long-term team.</h2>
-      <p class="lede">You always know what comes next. Here is exactly what your first five weeks look like.</p>
-      <div class="steps">
-        <div class="step"><span class="snum">1</span><h3>Understand your business</h3><p>We learn your goals, workflows, and what success looks like for each role.</p></div>
-        <div class="step"><span class="snum">2</span><h3>Define the ideal candidate</h3><p>Together we build a precise profile: skills, experience, and cultural fit.</p></div>
-        <div class="step"><span class="snum">3</span><h3>Source targeted talent</h3><p>We recruit specifically for you. No database of ready-made resumes.</p></div>
-        <div class="step"><span class="snum">4</span><h3>Evaluate and vet</h3><p>Thorough screening and assessment before you ever see a profile.</p></div>
-        <div class="step"><span class="snum">5</span><h3>You interview and select</h3><p>Meet only the most qualified professionals and choose who you prefer.</p></div>
-        <div class="step"><span class="snum">6</span><h3>Onboard and support</h3><p>Structured onboarding, then ongoing HR, payroll, and management from us.</p></div>
+      <div class="steps-list">
+        <div class="step-row"><span class="snum">01</span><div><h3>Understand your business</h3><p>We learn your goals, workflows, and what success looks like for each role.</p></div></div>
+        <div class="step-row"><span class="snum">02</span><div><h3>Define the ideal candidate</h3><p>Together we build a precise profile: skills, experience, and cultural fit.</p></div></div>
+        <div class="step-row"><span class="snum">03</span><div><h3>Source targeted talent</h3><p>We recruit specifically for you. No database of ready-made resumes.</p></div></div>
+        <div class="step-row"><span class="snum">04</span><div><h3>Evaluate and vet</h3><p>Thorough screening and assessment before you ever see a profile.</p></div></div>
+        <div class="step-row"><span class="snum">05</span><div><h3>You interview and select</h3><p>Meet only the most qualified professionals and choose who you prefer.</p></div></div>
+        <div class="step-row"><span class="snum">06</span><div><h3>Onboard and support</h3><p>Structured onboarding, then ongoing HR, payroll, and management from us.</p></div></div>
       </div>
     </div>
   </div>
@@ -145,7 +154,7 @@ const tick = "✓";
   <!-- PRICING -->
   <section class="sec" id="pricing">
     <div class="wrap">
-      <div class="sec-head">
+      <div class="sec-head left">
         <span class="eyebrow"><span class="dot"></span> Pricing</span>
         <h2>Simple. Transparent. Predictable.</h2>
         <p>One monthly investment covers recruitment, employment, HR, payroll, and ongoing support. No recruitment fees. No hidden costs.</p>
@@ -176,7 +185,7 @@ const tick = "✓";
             <li><span class="tick">{tick}</span> Compliance support</li>
             <li><span class="tick">{tick}</span> Replacement guarantee</li>
           </ul>
-          <a href="#cta" class="btn btn-yellow">Choose Professional <span class="arr-c" set:html={arrow}></span></a>
+          <a href="#cta" class="btn btn-blue">Choose Professional <span class="arr-c" set:html={arrow}></span></a>
         </div>
         <div class="price-card">
           <span class="price-tag">Expert</span>
@@ -200,11 +209,11 @@ const tick = "✓";
   <!-- FAQ -->
   <section class="sec" id="faq">
     <div class="wrap">
-      <div class="sec-head">
+      <div class="sec-head left">
         <span class="eyebrow"><span class="dot"></span> FAQ</span>
         <h2>Frequently asked questions.</h2>
       </div>
-      <div class="faq-list">
+      <div class="faq-list" style="margin:0;max-width:860px">
         <details class="faq-item">
           <summary>How is this different from a staffing agency? <span class="plus">+</span></summary>
           <div class="faq-a">Staffing agencies end the relationship after placement. We employ your professionals, manage HR, payroll, compliance, engagement, and replacements for as long as you work with us. Your team works exclusively for you, under your direction.</div>
@@ -234,7 +243,7 @@ const tick = "✓";
   </section>
 
   <!-- FINAL CTA -->
-  <div class="band-yellow" id="cta">
+  <div class="band-blue" id="cta">
     <div class="wrap final-cta">
       <div style="text-align:center">
         <span class="eyebrow"><span class="dot"></span> Get started</span>
