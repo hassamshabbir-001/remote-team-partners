@@ -2,14 +2,14 @@
    Yellow #fccc02, black, white. Solid colors only. No gradients. */
 
 :root {
-  --yellow: #fccc02;
-  --black: #0a0a0a;
-  --ink: #161616;
+  --yellow: #2742f5;
+  --black: #10141f;
+  --ink: #10141f;
   --gray: #55554f;
-  --paper: #f8f8f6;
+  --paper: #f6f5f1;
   --white: #ffffff;
-  --line: #e3e3de;
-  --card: #f1f0eb;
+  --line: #e4e3da;
+  --card: #efeee8;
   --radius-lg: 28px;
   --radius-md: 24px;
   --radius-sm: 18px;
@@ -97,10 +97,10 @@ h3 {
 }
 .btn-yellow {
   background: var(--yellow);
-  color: var(--black);
+  color: #ffffff;
 }
 .btn-yellow .arr-c {
-  background: var(--black);
+  background: #ffffff;
   color: var(--yellow);
 }
 .btn-white {
@@ -202,7 +202,7 @@ h3 {
   flex: none;
   font-weight: 900;
   font-size: 18px;
-  color: var(--black);
+  color: #ffffff;
 }
 .nav-links {
   display: none;
@@ -246,6 +246,7 @@ h3 {
 }
 .hero h1 .hl {
   background: var(--yellow);
+  color: #ffffff;
   padding: 0.1em 0.22em;
   border-radius: 10px;
   box-decoration-break: clone;
@@ -313,7 +314,7 @@ h3 {
 .float-card .ic svg {
   width: 22px;
   height: 22px;
-  stroke: var(--black);
+  stroke: #ffffff;
   fill: none;
   stroke-width: 2;
   stroke-linecap: round;
@@ -397,7 +398,7 @@ h3 {
 /* ============ YELLOW BAND ============ */
 .band-yellow {
   background: var(--yellow);
-  color: var(--black);
+  color: #ffffff;
   margin: 72px 12px 0;
   padding: 64px 0 72px;
   border-radius: var(--radius-lg);
@@ -410,7 +411,7 @@ h3 {
 }
 .band-yellow .lede {
   text-align: center;
-  color: #3a3a30;
+  color: #c9cddb;
   max-width: 640px;
   margin: 16px auto 0;
 }
@@ -465,11 +466,11 @@ h3 {
 }
 .duo-white .tick {
   background: var(--yellow);
-  color: var(--black);
+  color: #ffffff;
 }
 .duo-black .tick {
   background: var(--yellow);
-  color: var(--black);
+  color: #ffffff;
 }
 .duo-black li {
   color: #d8d8d3;
@@ -510,7 +511,7 @@ h3 {
 .svc-card .ic svg {
   width: 28px;
   height: 28px;
-  stroke: var(--black);
+  stroke: #ffffff;
   fill: none;
   stroke-width: 1.8;
   stroke-linecap: round;
@@ -583,7 +584,7 @@ h3 {
   height: 44px;
   border-radius: 999px;
   background: var(--yellow);
-  color: var(--black);
+  color: #ffffff;
   font-weight: 800;
   font-size: 16px;
   margin-bottom: 18px;
@@ -640,7 +641,7 @@ h3 {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   background: var(--yellow);
-  color: var(--black);
+  color: #ffffff;
   padding: 7px 16px;
   border-radius: 999px;
   margin-bottom: 20px;
@@ -682,7 +683,7 @@ h3 {
   height: 24px;
   border-radius: 999px;
   background: var(--yellow);
-  color: var(--black);
+  color: #ffffff;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -740,7 +741,7 @@ h3 {
   height: 34px;
   border-radius: 999px;
   background: var(--yellow);
-  color: var(--black);
+  color: #ffffff;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -802,7 +803,7 @@ h3 {
   background: var(--yellow);
   font-weight: 900;
   font-size: 16px;
-  color: var(--black);
+  color: #ffffff;
 }
 .footer p {
   font-size: 15px;
