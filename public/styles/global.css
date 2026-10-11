@@ -498,24 +498,15 @@ h3 {
   transform: translateY(-6px);
   box-shadow: var(--shadow);
 }
-.svc-card .ic {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 56px;
-  height: 56px;
-  border-radius: 16px;
-  background: var(--yellow);
+.svc-card .svc-img {
+  border-radius: 18px;
+  overflow: hidden;
   margin-bottom: 22px;
 }
-.svc-card .ic svg {
-  width: 28px;
-  height: 28px;
-  stroke: #ffffff;
-  fill: none;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.svc-card .svc-img img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
 }
 .svc-card h3 {
   font-size: 20px;
