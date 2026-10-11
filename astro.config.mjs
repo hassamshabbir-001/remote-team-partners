@@ -2,10 +2,9 @@
 import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
-// GHPAGES=true only for GitHub Pages preview builds (served from /remote-team-partners/)
-// Vercel builds use root '/' and are unaffected.
+// Note: all asset URLs use relative paths (images/..., styles/...)
+// so the site works from any base path (Vercel root, GitHub Pages subpath).
 export default defineConfig({
   site: 'https://remoteteampartners.com',
-  base: process.env.GHPAGES ? '/remote-team-partners/' : '/',
   compressHTML: true,
 });
