@@ -408,106 +408,145 @@ h3 {
   margin: 14px 0 0;
 }
 
-/* ============ SERVICES BENTO (asymmetric) ============ */
-.bento {
+/* ============ SERVICES: brand cards (image + overlapping info) ============ */
+.brands {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 20px;
 }
-.svc-card {
-  background: var(--white);
+.brand-card {
+  position: relative;
+}
+.brand-img {
   border-radius: var(--radius-md);
-  padding: 30px;
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  display: flex;
-  flex-direction: column;
-}
-.svc-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow);
-}
-.svc-card .svc-img {
-  border-radius: 16px;
   overflow: hidden;
-  margin-bottom: 20px;
+  box-shadow: var(--shadow-sm);
 }
-.svc-card .svc-img img {
+.brand-img img {
   width: 100%;
-  aspect-ratio: 16 / 9;
   object-fit: cover;
   transition: transform 0.35s ease;
 }
-.svc-card:hover .svc-img img {
+.brand-card:hover .brand-img img {
   transform: scale(1.04);
 }
-.svc-card h3 {
-  font-size: 20px;
-  margin-bottom: 8px;
-}
-.svc-card p {
-  color: var(--gray);
-  font-size: 15.5px;
-  margin: 0;
-}
-/* lead card: full width, horizontal */
-.svc-lead {
-  grid-column: span 12;
-  display: grid;
-  grid-template-columns: 0.88fr 1.12fr;
-  gap: 44px;
+.brand-info {
+  position: relative;
+  z-index: 2;
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  margin: -72px 22px 0;
+  padding: 24px 26px;
+  display: flex;
   align-items: center;
-  padding: 36px;
+  justify-content: space-between;
+  gap: 18px;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
-.svc-lead .svc-img {
-  margin-bottom: 0;
+.brand-card:hover .brand-info {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
 }
-.svc-lead .svc-img img {
-  aspect-ratio: 4 / 3;
+.brand-slug {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray);
+  letter-spacing: 0.02em;
+  margin-bottom: 4px;
 }
-.svc-lead h3 {
-  font-size: 28px;
+.brand-info h3 {
+  font-size: 21px;
+  margin-bottom: 6px;
 }
-.svc-lead p {
-  font-size: 16.5px;
+.brand-info p {
+  color: var(--gray);
+  font-size: 14.5px;
+  margin: 0;
+  line-height: 1.5;
 }
-.svc-card .btn {
-  margin-top: 24px;
-  align-self: flex-start;
+.brand-arrow {
+  flex: none;
+  width: 54px;
+  height: 54px;
+  border-radius: 999px;
+  background: var(--blue);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
 }
-.svc-mid .btn,
-.svc-sm .btn {
-  margin-top: auto;
+.brand-arrow:hover {
+  transform: translateY(-3px) scale(1.05);
 }
-.svc-mid p,
-.svc-sm p {
-  margin-bottom: 20px;
+.brand-arrow svg {
+  width: 22px;
+  height: 22px;
+  stroke-width: 2.2;
 }
-/* middle row: two cards */
-.svc-mid {
-  grid-column: span 6;
+/* large lead card */
+.brand-large {
+  grid-column: span 7;
+}
+.brand-large .brand-img img {
+  aspect-ratio: 4 / 3.6;
+}
+.brand-large .brand-info h3 {
+  font-size: 26px;
+}
+.brand-large .brand-info p {
+  font-size: 15.5px;
+}
+/* right stack: two small cards */
+.brand-stack {
+  grid-column: span 5;
+  display: grid;
+  gap: 20px;
+  align-content: start;
+}
+.brand-stack .brand-img img {
+  aspect-ratio: 16 / 8.5;
+}
+.brand-stack .brand-info {
+  margin-top: -58px;
+  padding: 20px 22px;
+}
+.brand-stack .brand-info h3 {
+  font-size: 19px;
 }
 /* bottom row: three cards */
-.svc-sm {
+.brand-third {
   grid-column: span 4;
 }
-.svc-sm h3 {
-  font-size: 18px;
+.brand-third .brand-img img {
+  aspect-ratio: 16 / 10;
 }
-@media (max-width: 900px) {
-  .svc-lead {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-  .svc-mid,
-  .svc-sm {
-    grid-column: span 6;
-  }
+.brand-third .brand-info {
+  margin-top: -58px;
+  padding: 20px 22px;
 }
-@media (max-width: 600px) {
-  .svc-mid,
-  .svc-sm {
+.brand-third .brand-info h3 {
+  font-size: 19px;
+}
+@media (max-width: 960px) {
+  .brand-large,
+  .brand-stack,
+  .brand-third {
     grid-column: span 12;
+  }
+  .brand-stack {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .brand-stack {
+    grid-template-columns: 1fr;
+  }
+  .brand-info {
+    margin-left: 14px;
+    margin-right: 14px;
   }
 }
 
