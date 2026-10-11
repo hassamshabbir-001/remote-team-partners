@@ -409,7 +409,7 @@ h3 {
 }
 
 /* ============ SERVICES: brand cards (image + overlapping info) ============ */
-/* v3: equal-height stack via flex, deploy check */
+/* v4: deploy trigger test */
 .brands {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
