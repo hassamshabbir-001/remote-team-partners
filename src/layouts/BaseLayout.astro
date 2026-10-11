@@ -7,6 +7,7 @@ export interface Props {
 const { title, description, path = "/" } = Astro.props;
 const site = "https://remoteteampartners.com";
 const canonical = `${site}${path}`;
+const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>';
 ---
 <!DOCTYPE html>
 <html lang="en-US">
@@ -25,10 +26,10 @@ const canonical = `${site}${path}`;
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
   <meta name="robots" content="index, follow" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230A1130'/><circle cx='38' cy='42' r='14' fill='%237C5CFF'/><circle cx='62' cy='58' r='14' fill='%2338E1FF' opacity='0.85'/></svg>" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23fccc02'/><text x='50' y='68' font-size='52' font-weight='900' text-anchor='middle' font-family='Arial'>R</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles/global.css" />
   <script type="application/ld+json">
   {
@@ -44,10 +45,10 @@ const canonical = `${site}${path}`;
 </head>
 <body>
   <header class="nav">
-    <div class="nav-inner">
-      <a href="/" class="logo" aria-label="Remote Team Partners home">
-        <span class="logo-mark" aria-hidden="true"><span class="lm-a"></span><span class="lm-b"></span></span>
-        <span class="logo-text">Remote Team <strong>Partners</strong></span>
+    <div class="nav-in">
+      <a href="/" class="wordmark" aria-label="Remote Team Partners home">
+        <span class="wm-mark">R</span>
+        <span>Remote Team Partners</span>
       </a>
       <nav class="nav-links" aria-label="Primary">
         <a href="#services">Services</a>
@@ -55,7 +56,7 @@ const canonical = `${site}${path}`;
         <a href="#pricing">Pricing</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <a href="#cta" class="btn btn-primary btn-sm">Book a Call</a>
+      <a href="#cta" class="btn btn-yellow btn-sm nav-cta">Book a Call <span class="arr-c" set:html={arrow}></span></a>
     </div>
   </header>
   <main>
@@ -65,7 +66,7 @@ const canonical = `${site}${path}`;
     <div class="wrap">
       <div class="foot-grid">
         <div>
-          <div class="logo-text foot-logo">Remote Team <strong>Partners</strong></div>
+          <div class="foot-brand"><span class="wm-mark">R</span> Remote Team Partners</div>
           <p>Dedicated remote teams for US businesses. You lead your people, we build, support, and manage the workforce behind them.</p>
         </div>
         <div>
