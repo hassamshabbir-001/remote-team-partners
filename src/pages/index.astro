@@ -58,32 +58,38 @@ const tick = "✓";
           <div>
             <h3>Staffing &amp; Recruitment</h3>
             <p>Targeted sourcing, thorough vetting, and client interviews. We invest the time to understand your requirements, identify the right talent, and present only the most qualified professionals. We would rather present three exceptional candidates than thirty average ones.</p>
+            <a href="#cta" class="btn btn-blue btn-sm">Learn More <span class="arr-c" set:html={arrow}></span></a>
           </div>
         </article>
         <article class="svc-card svc-mid">
           <div class="svc-img"><img src="/images/accounting-finance-services.webp" alt="Accounting and finance services, professional reviewing financial documents" width="640" height="360" loading="lazy" /></div>
           <h3>Accounting &amp; Finance</h3>
           <p>Bookkeepers, accountants, and finance professionals who keep your numbers accurate and on time.</p>
+          <a href="#cta" class="btn btn-blue btn-sm">Learn More <span class="arr-c" set:html={arrow}></span></a>
         </article>
         <article class="svc-card svc-mid">
           <div class="svc-img"><img src="/images/customer-support-services.webp" alt="Customer support services, friendly specialist with headset" width="640" height="360" loading="lazy" /></div>
           <h3>Customer Support</h3>
           <p>Dedicated support specialists trained on your product, your tone, and your customers.</p>
+          <a href="#cta" class="btn btn-blue btn-sm">Learn More <span class="arr-c" set:html={arrow}></span></a>
         </article>
         <article class="svc-card svc-sm">
           <div class="svc-img"><img src="/images/admin-operations-services.webp" alt="Admin and operations services, organized modern office workspace" width="480" height="270" loading="lazy" /></div>
           <h3>Admin &amp; Operations</h3>
           <p>Executive assistants and operations coordinators who keep things running.</p>
+          <a href="#cta" class="btn btn-blue btn-sm">Learn More <span class="arr-c" set:html={arrow}></span></a>
         </article>
         <article class="svc-card svc-sm">
           <div class="svc-img"><img src="/images/it-software-services.webp" alt="IT and software services, developer writing code" width="480" height="270" loading="lazy" /></div>
           <h3>IT &amp; Software</h3>
           <p>Developers and IT support vetted for skill and reliability.</p>
+          <a href="#cta" class="btn btn-blue btn-sm">Learn More <span class="arr-c" set:html={arrow}></span></a>
         </article>
         <article class="svc-card svc-sm">
           <div class="svc-img"><img src="/images/marketing-sales-services.webp" alt="Marketing and sales services, team strategy meeting" width="480" height="270" loading="lazy" /></div>
           <h3>Marketing &amp; Sales</h3>
           <p>Marketers, designers, and sales reps who grow your pipeline.</p>
+          <a href="#cta" class="btn btn-blue btn-sm">Learn More <span class="arr-c" set:html={arrow}></span></a>
         </article>
       </div>
       <div class="roles">
@@ -209,11 +215,11 @@ const tick = "✓";
   <!-- FAQ -->
   <section class="sec" id="faq">
     <div class="wrap">
-      <div class="sec-head left">
+      <div class="sec-head">
         <span class="eyebrow"><span class="dot"></span> FAQ</span>
         <h2>Frequently asked questions.</h2>
       </div>
-      <div class="faq-list" style="margin:0;max-width:860px">
+      <div class="faq-list">
         <details class="faq-item">
           <summary>How is this different from a staffing agency? <span class="plus">+</span></summary>
           <div class="faq-a">Staffing agencies end the relationship after placement. We employ your professionals, manage HR, payroll, compliance, engagement, and replacements for as long as you work with us. Your team works exclusively for you, under your direction.</div>
@@ -243,19 +249,35 @@ const tick = "✓";
   </section>
 
   <!-- FINAL CTA -->
-  <div class="band-blue" id="cta">
-    <div class="wrap final-cta">
-      <div style="text-align:center">
-        <span class="eyebrow"><span class="dot"></span> Get started</span>
-      </div>
-      <h2>Hire smarter. Scale faster.</h2>
-      <p class="lede">The question is no longer whether to grow your team, it is how quickly you can build the right one. Schedule your discovery call today.</p>
-      <div class="cta-row">
-        <a href="mailto:hello@remoteteampartners.com" class="btn btn-black">Book a Discovery Call <span class="arr-c" set:html={arrow}></span></a>
-        <a href="#pricing" class="btn btn-white">See Pricing <span class="arr-c" set:html={arrow}></span></a>
+  <section class="sec" id="cta" style="padding-bottom:88px">
+    <div class="wrap">
+      <div class="cta-card">
+        <span class="cta-dot d1" aria-hidden="true"></span>
+        <span class="cta-dot d2" aria-hidden="true"></span>
+        <div class="cta-copy">
+          <span class="eyebrow"><span class="dot"></span> Get started</span>
+          <h2>Hire smarter. Scale faster.</h2>
+          <p>The question is no longer whether to grow your team, it is how quickly you can build the right one. Schedule your discovery call today.</p>
+          <div class="cta-row">
+            <a href="mailto:hello@remoteteampartners.com" class="btn btn-blue">Book a Discovery Call <span class="arr-c" set:html={arrow}></span></a>
+            <a href="#pricing" class="btn btn-white">See Pricing <span class="arr-c" set:html={arrow}></span></a>
+          </div>
+          <ul class="cta-points">
+            <li><span class="tick">{tick}</span> No recruitment fees, ever</li>
+            <li><span class="tick">{tick}</span> Replacement guarantee included</li>
+            <li><span class="tick">{tick}</span> Scale up or down as you grow</li>
+          </ul>
+        </div>
+        <div class="cta-media">
+          <img src="/images/business-partnership-meeting.webp" alt="Business partnership meeting, two professionals shaking hands" width="800" height="600" loading="lazy" />
+          <div class="cta-float">
+            <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+            <div><strong>5 weeks to a working team</strong><span>from first call to fully onboarded</span></div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <script type="application/ld+json">
   {
