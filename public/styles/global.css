@@ -261,11 +261,12 @@ h3 {
   font-size: clamp(2.5rem, 4.6vw, 3.9rem);
   margin: 24px 0 0;
   font-weight: 800;
+  line-height: 1.32;
 }
 .hero h1 .hl {
   background: var(--blue);
   color: #ffffff;
-  padding: 0.06em 0.2em;
+  padding: 0.08em 0.22em;
   border-radius: 10px;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
