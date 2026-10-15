@@ -1394,3 +1394,20 @@ h3 {
 @media (max-width: 760px) {
   .legal-card { padding: 32px 24px; }
 }
+
+/* ============ MOBILE POLISH v2 (2026-10-15) ============ */
+@media (max-width: 960px) {
+  .hero { padding: 122px 0 56px; }
+  .hero-media img { height: 300px; }
+}
+@media (max-width: 640px) {
+  .hero h1 { font-size: 2.1rem; line-height: 1.38; }
+  /* stack hero float-cards under the image instead of overlapping */
+  .hero-media { display: flex; flex-direction: column; gap: 12px; }
+  .hero-media img { height: 260px; }
+  .float-card { position: static; max-width: none; }
+  /* service images: less towering on phones */
+  .brand-large .brand-img img { aspect-ratio: 16 / 11; }
+  .brand-stack .brand-img { min-height: 0; aspect-ratio: 16 / 10; }
+  .brand-stack .brand-info { margin-top: -48px; }
+}
