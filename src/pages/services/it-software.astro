@@ -1,0 +1,228 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>';
+const tick = "✓";
+---
+
+<BaseLayout
+  title="IT & Software | Remote Team Partners"
+  description="Dedicated remote developers, IT support, and QA professionals for US businesses. Vetted for skill, employed and managed by us."
+  path="/services/it-software/"
+  base="../../"
+>
+  <!-- HERO -->
+  <section class="hero hero-slim">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="../../">Home</a><span class="sep">/</span>
+        <a href="../../#services">Services</a><span class="sep">/</span>
+        <span class="cur">IT &amp; Software</span>
+      </nav>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="dot"></span> IT &amp; Software</span>
+          <h1>Technical talent, <span class="hl">vetted for skill</span> and reliability.</h1>
+          <p class="sub">Developers, IT support specialists, and QA professionals who join your team, work in your stack, and ship on your schedule.</p>
+          <div class="hero-ctas">
+            <a href="#cta" class="btn btn-blue">Book a Discovery Call <span class="arr-c" set:html={arrow}></span></a>
+            <a href="../../#pricing" class="btn btn-white">See Pricing <span class="arr-c" set:html={arrow}></span></a>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-item"><strong>5 weeks</strong><span>first call to working team</span></div>
+            <div class="proof-item"><strong>1 invoice</strong><span>predictable monthly cost</span></div>
+            <div class="proof-item"><strong>Guaranteed</strong><span>replacement on every hire</span></div>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="ph">
+            <img src="../../images/it-software-services.webp" srcset="../../images/it-software-services-mobile.webp 640w, ../../images/it-software-services.webp 1280w" sizes="(max-width: 640px) 640px, 1280px" alt="IT and software services, developer writing code" width="960" height="640" loading="eager" fetchpriority="high" />
+          </div>
+          <div class="float-card fc-1">
+            <span class="ic"><svg viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg></span>
+            <div><strong>Code you own</strong><span>IP assigned to your business</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head left">
+        <span class="eyebrow"><span class="dot"></span> What you get</span>
+        <h2>Engineers who contribute from week one.</h2>
+        <p>Real technical ability, verified before you interview. Here is what is included.</p>
+      </div>
+      <div class="deliver-grid">
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg></span>
+          <h3>Vetted developers</h3>
+          <p>Technical assessments verify real coding ability before you ever interview a candidate.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span>
+          <h3>Your stack, your workflow</h3>
+          <p>Git, Jira, CI/CD, and your development process, followed as you define it.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l2.5 2.5"/></svg></span>
+          <h3>IT support coverage</h3>
+          <p>Helpdesk and systems support for your internal team, during your business hours.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <h3>QA and testing</h3>
+          <p>Dedicated QA for manual and automated testing, integrated with your release cycle.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+          <h3>IP and security</h3>
+          <p>Work under NDA with access controls you define. Your code and data stay yours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <div class="band-black">
+    <div class="wrap">
+      <div class="band-head">
+        <span class="eyebrow on-dark"><span class="dot"></span> How it works</span>
+        <h2 style="margin-top:20px">From technical profile to shipping code.</h2>
+        <p class="lede">A clear four step process. You always know what comes next.</p>
+      </div>
+      <div class="steps-list">
+        <div class="step-row"><span class="snum">01</span><div><h3>Define the technical profile</h3><p>Languages, frameworks, and experience level, documented precisely.</p></div></div>
+        <div class="step-row"><span class="snum">02</span><div><h3>Assess real skill</h3><p>Coding assessments and technical interviews filter for ability, not resumes.</p></div></div>
+        <div class="step-row"><span class="snum">03</span><div><h3>You interview</h3><p>Meet the finalists and evaluate fit with your team.</p></div></div>
+        <div class="step-row"><span class="snum">04</span><div><h3>Ship together</h3><p>Onboarded into your repos and rituals, contributing from week one.</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROLES -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow"><span class="dot"></span> Roles we fill</span>
+        <h2>Technical roles we place every week.</h2>
+        <p>From frontend to DevOps, we cover the engineering and IT function.</p>
+      </div>
+      <div class="roles">
+        <span class="role-pill">Frontend Developer</span>
+        <span class="role-pill">Backend Developer</span>
+        <span class="role-pill">Full Stack Developer</span>
+        <span class="role-pill">Mobile Developer</span>
+        <span class="role-pill">DevOps Engineer</span>
+        <span class="role-pill">QA Engineer</span>
+        <span class="role-pill">IT Support Specialist</span>
+        <span class="role-pill">Systems Administrator</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow"><span class="dot"></span> FAQ</span>
+        <h2>Technical questions, answered.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>How do you assess developers? <span class="plus">+</span></summary>
+          <div class="faq-a">Role specific coding assessments, technical interviews, and portfolio or work sample reviews.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Who owns the code and IP? <span class="plus">+</span></summary>
+          <div class="faq-a">You do. All work is performed under agreements that assign intellectual property to your business.</div>
+        </details>
+        <details class="faq-item">
+          <summary>How do you handle time zones? <span class="plus">+</span></summary>
+          <div class="faq-a">We align working hours with your team for overlap on standups and collaboration.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Can you support our existing codebase? <span class="plus">+</span></summary>
+          <div class="faq-a">Yes. Developers onboard into your repos, documentation, and rituals before contributing.</div>
+        </details>
+        <details class="faq-item">
+          <summary>What if the developer does not work out? <span class="plus">+</span></summary>
+          <div class="faq-a">Every engagement includes a replacement guarantee. We source a replacement without disrupting your roadmap.</div>
+        </details>
+        <details class="faq-item">
+          <summary>What does it cost? <span class="plus">+</span></summary>
+          <div class="faq-a">Core Professional at $2,500 per month covers most developer roles. Senior and specialized roles fall under Core Expert, from $5,000 per month. Recruitment is included, with no separate placement fees.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="sec" id="cta" style="padding-bottom:88px">
+    <div class="wrap">
+      <div class="cta-card">
+        <span class="cta-dot d1" aria-hidden="true"></span>
+        <span class="cta-dot d2" aria-hidden="true"></span>
+        <div class="cta-copy">
+          <span class="eyebrow"><span class="dot"></span> Get started</span>
+          <h2>Hire smarter. Scale faster.</h2>
+          <p>Your roadmap is waiting on the right engineer. Book a call and meet vetted candidates within weeks.</p>
+          <div class="cta-row">
+            <a href="mailto:hello@remoteteampartners.com" class="btn btn-blue">Book a Discovery Call <span class="arr-c" set:html={arrow}></span></a>
+            <a href="../../#pricing" class="btn btn-white">See Pricing <span class="arr-c" set:html={arrow}></span></a>
+          </div>
+          <ul class="cta-points">
+            <li><span class="tick">{tick}</span> No recruitment fees, ever</li>
+            <li><span class="tick">{tick}</span> Replacement guarantee included</li>
+            <li><span class="tick">{tick}</span> Scale up or down as you grow</li>
+          </ul>
+        </div>
+        <div class="cta-media">
+          <img src="../../images/business-partnership-meeting.webp" alt="Business partnership meeting, two professionals shaking hands" width="800" height="600" loading="lazy" />
+          <div class="cta-float">
+            <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+            <div><strong>5 weeks to a working team</strong><span>from first call to fully onboarded</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "IT & Software",
+    "description": "Dedicated remote developers, IT support, and QA professionals for US businesses. Vetted for skill, employed and managed by us.",
+    "provider": { "@type": "Organization", "name": "Remote Team Partners", "url": "https://remoteteampartners.com" },
+    "areaServed": "United States",
+    "url": "https://remoteteampartners.com/services/it-software/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://remoteteampartners.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://remoteteampartners.com/#services" },
+      { "@type": "ListItem", "position": 3, "name": "IT & Software", "item": "https://remoteteampartners.com/services/it-software/" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "How do you assess developers?", "acceptedAnswer": { "@type": "Answer", "text": "Role specific coding assessments, technical interviews, and portfolio or work sample reviews." } },
+      { "@type": "Question", "name": "Who owns the code and IP?", "acceptedAnswer": { "@type": "Answer", "text": "You do. All work is performed under agreements that assign intellectual property to your business." } },
+      { "@type": "Question", "name": "How do you handle time zones?", "acceptedAnswer": { "@type": "Answer", "text": "We align working hours with your team for overlap on standups and collaboration." } },
+      { "@type": "Question", "name": "Can you support our existing codebase?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Developers onboard into your repos, documentation, and rituals before contributing." } },
+      { "@type": "Question", "name": "What if the developer does not work out?", "acceptedAnswer": { "@type": "Answer", "text": "Every engagement includes a replacement guarantee." } },
+      { "@type": "Question", "name": "What does it cost?", "acceptedAnswer": { "@type": "Answer", "text": "Core Professional at $2,500 per month covers most developer roles. Senior and specialized roles fall under Core Expert, from $5,000 per month." } }
+    ]
+  }
+  </script>
+</BaseLayout>

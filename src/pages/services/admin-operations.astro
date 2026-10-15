@@ -1,0 +1,228 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>';
+const tick = "✓";
+---
+
+<BaseLayout
+  title="Admin & Operations | Remote Team Partners"
+  description="Dedicated remote executive assistants, coordinators, and operations support for US businesses. Organized, reliable, and exclusively yours."
+  path="/services/admin-operations/"
+  base="../../"
+>
+  <!-- HERO -->
+  <section class="hero hero-slim">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="../../">Home</a><span class="sep">/</span>
+        <a href="../../#services">Services</a><span class="sep">/</span>
+        <span class="cur">Admin &amp; Operations</span>
+      </nav>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="dot"></span> Admin &amp; Operations</span>
+          <h1>The organized <span class="hl">backbone</span> your business runs on.</h1>
+          <p class="sub">Executive assistants, coordinators, and operations professionals who keep calendars, inboxes, data, and processes under control.</p>
+          <div class="hero-ctas">
+            <a href="#cta" class="btn btn-blue">Book a Discovery Call <span class="arr-c" set:html={arrow}></span></a>
+            <a href="../../#pricing" class="btn btn-white">See Pricing <span class="arr-c" set:html={arrow}></span></a>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-item"><strong>5 weeks</strong><span>first call to working team</span></div>
+            <div class="proof-item"><strong>1 invoice</strong><span>predictable monthly cost</span></div>
+            <div class="proof-item"><strong>Guaranteed</strong><span>replacement on every hire</span></div>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="ph">
+            <img src="../../images/admin-operations-services.webp" srcset="../../images/admin-operations-services-mobile.webp 640w, ../../images/admin-operations-services.webp 1280w" sizes="(max-width: 640px) 640px, 1280px" alt="Admin and operations services, organized modern office workspace" width="960" height="640" loading="eager" fetchpriority="high" />
+          </div>
+          <div class="float-card fc-1">
+            <span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+            <div><strong>Inbox zero</strong><span>calendars managed, nothing missed</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head left">
+        <span class="eyebrow"><span class="dot"></span> What you get</span>
+        <h2>Your time, given back to you.</h2>
+        <p>The recurring work that eats your week, handled reliably. Here is what is included.</p>
+      </div>
+      <div class="deliver-grid">
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          <h3>Executive assistance</h3>
+          <p>Calendar, inbox, travel, and meeting management from a dedicated assistant.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <h3>Operations coordination</h3>
+          <p>Process documentation, follow ups, and coordination across your team.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></span>
+          <h3>Data entry and cleanup</h3>
+          <p>Accurate data work in your CRM, spreadsheets, and systems, with QA checks.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+          <h3>Inbox and scheduling</h3>
+          <p>Triage, prioritization, and scheduling handled proactively, not reactively.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg></span>
+          <h3>Reporting support</h3>
+          <p>Recurring reports and dashboards prepared on your cadence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <div class="band-black">
+    <div class="wrap">
+      <div class="band-head">
+        <span class="eyebrow on-dark"><span class="dot"></span> How it works</span>
+        <h2 style="margin-top:20px">From overloaded to organized.</h2>
+        <p class="lede">A clear four step process. You always know what comes next.</p>
+      </div>
+      <div class="steps-list">
+        <div class="step-row"><span class="snum">01</span><div><h3>Audit your workload</h3><p>We identify the recurring tasks consuming your time.</p></div></div>
+        <div class="step-row"><span class="snum">02</span><div><h3>Design the role</h3><p>Clear responsibilities, tools, and success measures for your assistant or coordinator.</p></div></div>
+        <div class="step-row"><span class="snum">03</span><div><h3>You interview</h3><p>Meet candidates and choose the working style you prefer.</p></div></div>
+        <div class="step-row"><span class="snum">04</span><div><h3>Hand off with confidence</h3><p>Documented processes and a structured first month.</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROLES -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow"><span class="dot"></span> Roles we fill</span>
+        <h2>Operations roles we place every week.</h2>
+        <p>From executive support to data operations, we cover the back office.</p>
+      </div>
+      <div class="roles">
+        <span class="role-pill">Executive Assistant</span>
+        <span class="role-pill">Administrative Assistant</span>
+        <span class="role-pill">Operations Coordinator</span>
+        <span class="role-pill">Data Entry Specialist</span>
+        <span class="role-pill">Project Coordinator</span>
+        <span class="role-pill">CRM Administrator</span>
+        <span class="role-pill">Research Assistant</span>
+        <span class="role-pill">Virtual Office Manager</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow"><span class="dot"></span> FAQ</span>
+        <h2>Operations questions, answered.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>What tasks can an executive assistant handle? <span class="plus">+</span></summary>
+          <div class="faq-a">Calendar and inbox management, travel booking, meeting preparation, expense reports, and personal task coordination.</div>
+        </details>
+        <details class="faq-item">
+          <summary>How do you ensure data accuracy? <span class="plus">+</span></summary>
+          <div class="faq-a">Defined processes, double check routines, and QA sampling on data work.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Which tools do you work in? <span class="plus">+</span></summary>
+          <div class="faq-a">Google Workspace, Microsoft 365, Asana, Trello, Monday, HubSpot, Salesforce, and your internal systems.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Can one assistant support multiple executives? <span class="plus">+</span></summary>
+          <div class="faq-a">We recommend dedicated support for the best results, and we can scope shared coverage when it makes sense.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Who employs the professionals? <span class="plus">+</span></summary>
+          <div class="faq-a">We do. Employment contracts, payroll, benefits administration, and compliance are our responsibility.</div>
+        </details>
+        <details class="faq-item">
+          <summary>What does it cost? <span class="plus">+</span></summary>
+          <div class="faq-a">One monthly investment per professional: $1,500 for Associates, $2,500 for Professionals, and from $5,000 for Experts. Recruitment is included, with no separate placement fees.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="sec" id="cta" style="padding-bottom:88px">
+    <div class="wrap">
+      <div class="cta-card">
+        <span class="cta-dot d1" aria-hidden="true"></span>
+        <span class="cta-dot d2" aria-hidden="true"></span>
+        <div class="cta-copy">
+          <span class="eyebrow"><span class="dot"></span> Get started</span>
+          <h2>Hire smarter. Scale faster.</h2>
+          <p>Stop spending your week on work someone else should own. Book a call and meet your assistant within weeks.</p>
+          <div class="cta-row">
+            <a href="mailto:hello@remoteteampartners.com" class="btn btn-blue">Book a Discovery Call <span class="arr-c" set:html={arrow}></span></a>
+            <a href="../../#pricing" class="btn btn-white">See Pricing <span class="arr-c" set:html={arrow}></span></a>
+          </div>
+          <ul class="cta-points">
+            <li><span class="tick">{tick}</span> No recruitment fees, ever</li>
+            <li><span class="tick">{tick}</span> Replacement guarantee included</li>
+            <li><span class="tick">{tick}</span> Scale up or down as you grow</li>
+          </ul>
+        </div>
+        <div class="cta-media">
+          <img src="../../images/business-partnership-meeting.webp" alt="Business partnership meeting, two professionals shaking hands" width="800" height="600" loading="lazy" />
+          <div class="cta-float">
+            <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+            <div><strong>5 weeks to a working team</strong><span>from first call to fully onboarded</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Admin & Operations",
+    "description": "Dedicated remote executive assistants, coordinators, and operations support for US businesses. Organized, reliable, and exclusively yours.",
+    "provider": { "@type": "Organization", "name": "Remote Team Partners", "url": "https://remoteteampartners.com" },
+    "areaServed": "United States",
+    "url": "https://remoteteampartners.com/services/admin-operations/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://remoteteampartners.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://remoteteampartners.com/#services" },
+      { "@type": "ListItem", "position": 3, "name": "Admin & Operations", "item": "https://remoteteampartners.com/services/admin-operations/" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What tasks can an executive assistant handle?", "acceptedAnswer": { "@type": "Answer", "text": "Calendar and inbox management, travel booking, meeting preparation, expense reports, and personal task coordination." } },
+      { "@type": "Question", "name": "How do you ensure data accuracy?", "acceptedAnswer": { "@type": "Answer", "text": "Defined processes, double check routines, and QA sampling on data work." } },
+      { "@type": "Question", "name": "Which tools do you work in?", "acceptedAnswer": { "@type": "Answer", "text": "Google Workspace, Microsoft 365, Asana, Trello, Monday, HubSpot, Salesforce, and your internal systems." } },
+      { "@type": "Question", "name": "Can one assistant support multiple executives?", "acceptedAnswer": { "@type": "Answer", "text": "We recommend dedicated support for the best results, and we can scope shared coverage when it makes sense." } },
+      { "@type": "Question", "name": "Who employs the professionals?", "acceptedAnswer": { "@type": "Answer", "text": "Remote Team Partners employs them, handling contracts, payroll, benefits, and compliance." } },
+      { "@type": "Question", "name": "What does it cost?", "acceptedAnswer": { "@type": "Answer", "text": "One monthly investment: $1,500 for Associates, $2,500 for Professionals, from $5,000 for Experts. Recruitment is included." } }
+    ]
+  }
+  </script>
+</BaseLayout>

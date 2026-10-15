@@ -1,0 +1,228 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>';
+const tick = "✓";
+---
+
+<BaseLayout
+  title="Customer Support | Remote Team Partners"
+  description="Dedicated remote customer support specialists for US businesses. Trained on your product and tone, with 24/7 coverage options."
+  path="/services/customer-support/"
+  base="../../"
+>
+  <!-- HERO -->
+  <section class="hero hero-slim">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="../../">Home</a><span class="sep">/</span>
+        <a href="../../#services">Services</a><span class="sep">/</span>
+        <span class="cur">Customer Support</span>
+      </nav>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="dot"></span> Customer Support</span>
+          <h1>Support that <span class="hl">sounds like you,</span> at any hour.</h1>
+          <p class="sub">Dedicated specialists trained on your product, your tone, and your customers. Daytime coverage or full 24/7, your choice.</p>
+          <div class="hero-ctas">
+            <a href="#cta" class="btn btn-blue">Book a Discovery Call <span class="arr-c" set:html={arrow}></span></a>
+            <a href="../../#pricing" class="btn btn-white">See Pricing <span class="arr-c" set:html={arrow}></span></a>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-item"><strong>5 weeks</strong><span>first call to working team</span></div>
+            <div class="proof-item"><strong>1 invoice</strong><span>predictable monthly cost</span></div>
+            <div class="proof-item"><strong>Guaranteed</strong><span>replacement on every hire</span></div>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="ph">
+            <img src="../../images/customer-support-services.webp" srcset="../../images/customer-support-services-mobile.webp 640w, ../../images/customer-support-services.webp 1280w" sizes="(max-width: 640px) 640px, 1280px" alt="Customer support services, friendly specialist with headset" width="960" height="640" loading="eager" fetchpriority="high" />
+          </div>
+          <div class="float-card fc-1">
+            <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+            <div><strong>24/7 coverage</strong><span>your customers, answered</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head left">
+        <span class="eyebrow"><span class="dot"></span> What you get</span>
+        <h2>Your brand, represented well.</h2>
+        <p>Specialists who know your product and speak in your voice. Here is what is included.</p>
+      </div>
+      <div class="deliver-grid">
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          <h3>Dedicated specialists</h3>
+          <p>Professionals assigned to your brand, not shared across clients. They learn your business deeply.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+          <h3>Product and tone training</h3>
+          <p>We train on your help center, macros, and voice before first contact with a customer.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+          <h3>24/7 coverage options</h3>
+          <p>Follow the sun scheduling across time zones for round the clock support, or business hours only.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span>
+          <h3>Your helpdesk</h3>
+          <p>Zendesk, Intercom, Freshdesk, or your platform of choice. We work where you already work.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <h3>Quality monitoring</h3>
+          <p>Regular QA reviews and calibration sessions keep quality consistent as you scale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <div class="band-black">
+    <div class="wrap">
+      <div class="band-head">
+        <span class="eyebrow on-dark"><span class="dot"></span> How it works</span>
+        <h2 style="margin-top:20px">From onboarding to live support.</h2>
+        <p class="lede">A clear four step process. You always know what comes next.</p>
+      </div>
+      <div class="steps-list">
+        <div class="step-row"><span class="snum">01</span><div><h3>Learn your product</h3><p>We study your product, help center, and support policies.</p></div></div>
+        <div class="step-row"><span class="snum">02</span><div><h3>Build the team</h3><p>We recruit specialists with the communication skills your customers expect.</p></div></div>
+        <div class="step-row"><span class="snum">03</span><div><h3>Train and shadow</h3><p>Structured training on your tools and tone, then supervised live tickets.</p></div></div>
+        <div class="step-row"><span class="snum">04</span><div><h3>Go live with QA</h3><p>Full coverage with ongoing quality reviews and coaching.</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROLES -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow"><span class="dot"></span> Roles we fill</span>
+        <h2>Support roles we place every week.</h2>
+        <p>From frontline agents to QA, we build the full support function.</p>
+      </div>
+      <div class="roles">
+        <span class="role-pill">Customer Support Specialist</span>
+        <span class="role-pill">Customer Support Lead</span>
+        <span class="role-pill">Technical Support Specialist</span>
+        <span class="role-pill">Live Chat Agent</span>
+        <span class="role-pill">Email Support Agent</span>
+        <span class="role-pill">Helpdesk Coordinator</span>
+        <span class="role-pill">Customer Success Specialist</span>
+        <span class="role-pill">QA Analyst</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow"><span class="dot"></span> FAQ</span>
+        <h2>Support questions, answered.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Can you cover 24/7? <span class="plus">+</span></summary>
+          <div class="faq-a">Yes. We schedule across time zones for continuous coverage, or business hours only if you prefer.</div>
+        </details>
+        <details class="faq-item">
+          <summary>How are specialists trained? <span class="plus">+</span></summary>
+          <div class="faq-a">On your product documentation, help center, macros, and brand voice, followed by supervised live work.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Which helpdesk platforms do you use? <span class="plus">+</span></summary>
+          <div class="faq-a">Zendesk, Intercom, Freshdesk, HubSpot, and most major platforms. Your team works inside your existing setup.</div>
+        </details>
+        <details class="faq-item">
+          <summary>How do you maintain quality? <span class="plus">+</span></summary>
+          <div class="faq-a">Regular QA sampling, calibration sessions, and coaching tied to your quality standards.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Do specialists work only for us? <span class="plus">+</span></summary>
+          <div class="faq-a">Yes. Your support team is dedicated to your business and your customers.</div>
+        </details>
+        <details class="faq-item">
+          <summary>What does it cost? <span class="plus">+</span></summary>
+          <div class="faq-a">One monthly investment per professional: $1,500 for Associates, $2,500 for Professionals, and from $5,000 for Experts. Recruitment is included, with no separate placement fees.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="sec" id="cta" style="padding-bottom:88px">
+    <div class="wrap">
+      <div class="cta-card">
+        <span class="cta-dot d1" aria-hidden="true"></span>
+        <span class="cta-dot d2" aria-hidden="true"></span>
+        <div class="cta-copy">
+          <span class="eyebrow"><span class="dot"></span> Get started</span>
+          <h2>Hire smarter. Scale faster.</h2>
+          <p>Every unanswered ticket is a customer at risk. Book a call and put a dedicated support team in place within weeks.</p>
+          <div class="cta-row">
+            <a href="mailto:hello@remoteteampartners.com" class="btn btn-blue">Book a Discovery Call <span class="arr-c" set:html={arrow}></span></a>
+            <a href="../../#pricing" class="btn btn-white">See Pricing <span class="arr-c" set:html={arrow}></span></a>
+          </div>
+          <ul class="cta-points">
+            <li><span class="tick">{tick}</span> No recruitment fees, ever</li>
+            <li><span class="tick">{tick}</span> Replacement guarantee included</li>
+            <li><span class="tick">{tick}</span> Scale up or down as you grow</li>
+          </ul>
+        </div>
+        <div class="cta-media">
+          <img src="../../images/business-partnership-meeting.webp" alt="Business partnership meeting, two professionals shaking hands" width="800" height="600" loading="lazy" />
+          <div class="cta-float">
+            <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+            <div><strong>5 weeks to a working team</strong><span>from first call to fully onboarded</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Customer Support",
+    "description": "Dedicated remote customer support specialists for US businesses. Trained on your product and tone, with 24/7 coverage options.",
+    "provider": { "@type": "Organization", "name": "Remote Team Partners", "url": "https://remoteteampartners.com" },
+    "areaServed": "United States",
+    "url": "https://remoteteampartners.com/services/customer-support/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://remoteteampartners.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://remoteteampartners.com/#services" },
+      { "@type": "ListItem", "position": 3, "name": "Customer Support", "item": "https://remoteteampartners.com/services/customer-support/" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Can you cover 24/7?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We schedule across time zones for continuous coverage, or business hours only if you prefer." } },
+      { "@type": "Question", "name": "How are specialists trained?", "acceptedAnswer": { "@type": "Answer", "text": "On your product documentation, help center, macros, and brand voice, followed by supervised live work." } },
+      { "@type": "Question", "name": "Which helpdesk platforms do you use?", "acceptedAnswer": { "@type": "Answer", "text": "Zendesk, Intercom, Freshdesk, HubSpot, and most major platforms." } },
+      { "@type": "Question", "name": "How do you maintain quality?", "acceptedAnswer": { "@type": "Answer", "text": "Regular QA sampling, calibration sessions, and coaching tied to your quality standards." } },
+      { "@type": "Question", "name": "Do specialists work only for us?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Your support team is dedicated to your business and your customers." } },
+      { "@type": "Question", "name": "What does it cost?", "acceptedAnswer": { "@type": "Answer", "text": "One monthly investment: $1,500 for Associates, $2,500 for Professionals, from $5,000 for Experts. Recruitment is included." } }
+    ]
+  }
+  </script>
+</BaseLayout>

@@ -1,0 +1,228 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>';
+const tick = "✓";
+---
+
+<BaseLayout
+  title="Staffing & Recruitment | Remote Team Partners"
+  description="Targeted remote staffing and recruitment for US businesses. We source, vet, and present exceptional candidates, then employ and manage them for you."
+  path="/services/staffing-recruitment/"
+  base="../../"
+>
+  <!-- HERO -->
+  <section class="hero hero-slim">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="../../">Home</a><span class="sep">/</span>
+        <a href="../../#services">Services</a><span class="sep">/</span>
+        <span class="cur">Staffing &amp; Recruitment</span>
+      </nav>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="dot"></span> Staffing &amp; Recruitment</span>
+          <h1>Three exceptional candidates, <span class="hl">not thirty average ones.</span></h1>
+          <p class="sub">We recruit specifically for your business. Targeted sourcing, thorough vetting, and client interviews, followed by full employment and team management on our side.</p>
+          <div class="hero-ctas">
+            <a href="#cta" class="btn btn-blue">Book a Discovery Call <span class="arr-c" set:html={arrow}></span></a>
+            <a href="../../#pricing" class="btn btn-white">See Pricing <span class="arr-c" set:html={arrow}></span></a>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-item"><strong>5 weeks</strong><span>first call to working team</span></div>
+            <div class="proof-item"><strong>1 invoice</strong><span>predictable monthly cost</span></div>
+            <div class="proof-item"><strong>Guaranteed</strong><span>replacement on every hire</span></div>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="ph">
+            <img src="../../images/staffing-recruitment-services.webp" srcset="../../images/staffing-recruitment-services-mobile.webp 640w, ../../images/staffing-recruitment-services.webp 1280w" sizes="(max-width: 640px) 640px, 1280px" alt="Staffing and recruitment services, professional job interview" width="960" height="640" loading="eager" fetchpriority="high" />
+          </div>
+          <div class="float-card fc-1">
+            <span class="ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/></svg></span>
+            <div><strong>Client interviews</strong><span>you make the final call</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head left">
+        <span class="eyebrow"><span class="dot"></span> What you get</span>
+        <h2>Recruitment done properly, end to end.</h2>
+        <p>Every search is built around your role. Here is what is included in every staffing engagement.</p>
+      </div>
+      <div class="deliver-grid">
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/></svg></span>
+          <h3>Targeted sourcing</h3>
+          <p>We recruit for your role, not from a database. Every search starts with your requirements and your market.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <h3>Thorough vetting</h3>
+          <p>Skills assessments, work history verification, and structured interviews before you meet anyone.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m16 11 2 2 4-4"/></svg></span>
+          <h3>Client interviews</h3>
+          <p>You interview the final shortlist and make the final decision. No hire moves forward without your approval.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></span>
+          <h3>Employment handled</h3>
+          <p>Contracts, payroll, benefits administration, and compliance are managed by us from day one.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg></span>
+          <h3>Ongoing management</h3>
+          <p>HR support, engagement, performance check ins, and a replacement guarantee for the full engagement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <div class="band-black">
+    <div class="wrap">
+      <div class="band-head">
+        <span class="eyebrow on-dark"><span class="dot"></span> How it works</span>
+        <h2 style="margin-top:20px">From role definition to working hire.</h2>
+        <p class="lede">A clear four step process. You always know what comes next.</p>
+      </div>
+      <div class="steps-list">
+        <div class="step-row"><span class="snum">01</span><div><h3>Define the role</h3><p>We document the skills, experience, and traits that predict success in your role.</p></div></div>
+        <div class="step-row"><span class="snum">02</span><div><h3>Source and vet</h3><p>Targeted outreach and screening. Assessments verify the skills that matter.</p></div></div>
+        <div class="step-row"><span class="snum">03</span><div><h3>You interview</h3><p>Meet a shortlist of exceptional candidates and choose the one you prefer.</p></div></div>
+        <div class="step-row"><span class="snum">04</span><div><h3>We employ and manage</h3><p>Onboarding, payroll, HR, and ongoing support, handled by us from day one.</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROLES -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow"><span class="dot"></span> Roles we fill</span>
+        <h2>Hiring roles we place every week.</h2>
+        <p>If a hiring role can be performed remotely, we can fill it.</p>
+      </div>
+      <div class="roles">
+        <span class="role-pill">Recruiter</span>
+        <span class="role-pill">Talent Sourcer</span>
+        <span class="role-pill">HR Generalist</span>
+        <span class="role-pill">HR Manager</span>
+        <span class="role-pill">Payroll Specialist</span>
+        <span class="role-pill">Onboarding Coordinator</span>
+        <span class="role-pill">Workforce Analyst</span>
+        <span class="role-pill">Compensation Analyst</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow"><span class="dot"></span> FAQ</span>
+        <h2>Staffing questions, answered.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>How long does it take to fill a role? <span class="plus">+</span></summary>
+          <div class="faq-a">Most roles are filled within five weeks from the discovery call: one week to define the profile, two weeks of sourcing and vetting, one week of interviews, and onboarding in week five.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Do you work from a candidate database? <span class="plus">+</span></summary>
+          <div class="faq-a">No. Every search is targeted to your role. We recruit specifically for you rather than recycling existing resumes.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Who employs the professionals? <span class="plus">+</span></summary>
+          <div class="faq-a">We do. Employment contracts, payroll, benefits administration, and compliance are our responsibility.</div>
+        </details>
+        <details class="faq-item">
+          <summary>What does vetting include? <span class="plus">+</span></summary>
+          <div class="faq-a">Skills assessments, structured interviews, work history verification, and reference checks where appropriate.</div>
+        </details>
+        <details class="faq-item">
+          <summary>What if the hire does not work out? <span class="plus">+</span></summary>
+          <div class="faq-a">Every engagement includes a replacement guarantee. We source a replacement without disrupting your operations.</div>
+        </details>
+        <details class="faq-item">
+          <summary>What does it cost? <span class="plus">+</span></summary>
+          <div class="faq-a">One monthly investment per professional: $1,500 for Associates, $2,500 for Professionals, and from $5,000 for Experts. Recruitment is included, with no separate placement fees.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="sec" id="cta" style="padding-bottom:88px">
+    <div class="wrap">
+      <div class="cta-card">
+        <span class="cta-dot d1" aria-hidden="true"></span>
+        <span class="cta-dot d2" aria-hidden="true"></span>
+        <div class="cta-copy">
+          <span class="eyebrow"><span class="dot"></span> Get started</span>
+          <h2>Hire smarter. Scale faster.</h2>
+          <p>Tell us the role. We will bring you three exceptional candidates within weeks, then employ and manage the one you choose.</p>
+          <div class="cta-row">
+            <a href="mailto:hello@remoteteampartners.com" class="btn btn-blue">Book a Discovery Call <span class="arr-c" set:html={arrow}></span></a>
+            <a href="../../#pricing" class="btn btn-white">See Pricing <span class="arr-c" set:html={arrow}></span></a>
+          </div>
+          <ul class="cta-points">
+            <li><span class="tick">{tick}</span> No recruitment fees, ever</li>
+            <li><span class="tick">{tick}</span> Replacement guarantee included</li>
+            <li><span class="tick">{tick}</span> Scale up or down as you grow</li>
+          </ul>
+        </div>
+        <div class="cta-media">
+          <img src="../../images/business-partnership-meeting.webp" alt="Business partnership meeting, two professionals shaking hands" width="800" height="600" loading="lazy" />
+          <div class="cta-float">
+            <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+            <div><strong>5 weeks to a working team</strong><span>from first call to fully onboarded</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Staffing & Recruitment",
+    "description": "Targeted remote staffing and recruitment for US businesses. Sourcing, vetting, client interviews, employment, and ongoing team management.",
+    "provider": { "@type": "Organization", "name": "Remote Team Partners", "url": "https://remoteteampartners.com" },
+    "areaServed": "United States",
+    "url": "https://remoteteampartners.com/services/staffing-recruitment/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://remoteteampartners.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://remoteteampartners.com/#services" },
+      { "@type": "ListItem", "position": 3, "name": "Staffing & Recruitment", "item": "https://remoteteampartners.com/services/staffing-recruitment/" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "How long does it take to fill a role?", "acceptedAnswer": { "@type": "Answer", "text": "Most roles are filled within five weeks from the discovery call: one week to define the profile, two weeks of sourcing and vetting, one week of interviews, and onboarding in week five." } },
+      { "@type": "Question", "name": "Do you work from a candidate database?", "acceptedAnswer": { "@type": "Answer", "text": "No. Every search is targeted to your role. We recruit specifically for you rather than recycling existing resumes." } },
+      { "@type": "Question", "name": "Who employs the professionals?", "acceptedAnswer": { "@type": "Answer", "text": "Remote Team Partners employs them, handling contracts, payroll, benefits, and compliance." } },
+      { "@type": "Question", "name": "What does vetting include?", "acceptedAnswer": { "@type": "Answer", "text": "Skills assessments, structured interviews, work history verification, and reference checks where appropriate." } },
+      { "@type": "Question", "name": "What if the hire does not work out?", "acceptedAnswer": { "@type": "Answer", "text": "Every engagement includes a replacement guarantee." } },
+      { "@type": "Question", "name": "What does it cost?", "acceptedAnswer": { "@type": "Answer", "text": "One monthly investment: $1,500 for Associates, $2,500 for Professionals, from $5,000 for Experts. Recruitment is included." } }
+    ]
+  }
+  </script>
+</BaseLayout>

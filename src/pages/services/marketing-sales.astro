@@ -1,0 +1,228 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>';
+const tick = "✓";
+---
+
+<BaseLayout
+  title="Marketing & Sales | Remote Team Partners"
+  description="Dedicated remote marketers, SDRs, and content professionals for US businesses. Grow your pipeline with a team that is exclusively yours."
+  path="/services/marketing-sales/"
+  base="../../"
+>
+  <!-- HERO -->
+  <section class="hero hero-slim">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="../../">Home</a><span class="sep">/</span>
+        <a href="../../#services">Services</a><span class="sep">/</span>
+        <span class="cur">Marketing &amp; Sales</span>
+      </nav>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="dot"></span> Marketing &amp; Sales</span>
+          <h1>A growth team <span class="hl">that works</span> only for you.</h1>
+          <p class="sub">Digital marketers, SDRs, content creators, and SEO specialists dedicated to your pipeline and your brand.</p>
+          <div class="hero-ctas">
+            <a href="#cta" class="btn btn-blue">Book a Discovery Call <span class="arr-c" set:html={arrow}></span></a>
+            <a href="../../#pricing" class="btn btn-white">See Pricing <span class="arr-c" set:html={arrow}></span></a>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-item"><strong>5 weeks</strong><span>first call to working team</span></div>
+            <div class="proof-item"><strong>1 invoice</strong><span>predictable monthly cost</span></div>
+            <div class="proof-item"><strong>Guaranteed</strong><span>replacement on every hire</span></div>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="ph">
+            <img src="../../images/marketing-sales-services.webp" srcset="../../images/marketing-sales-services-mobile.webp 640w, ../../images/marketing-sales-services.webp 1280w" sizes="(max-width: 640px) 640px, 1280px" alt="Marketing and sales services, team strategy meeting" width="960" height="640" loading="eager" fetchpriority="high" />
+          </div>
+          <div class="float-card fc-1">
+            <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg></span>
+            <div><strong>Pipeline growth</strong><span>outreach, content, and follow up</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head left">
+        <span class="eyebrow"><span class="dot"></span> What you get</span>
+        <h2>Consistent growth activity, every week.</h2>
+        <p>Outreach, content, and follow up that never slips. Here is what is included.</p>
+      </div>
+      <div class="deliver-grid">
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/></svg></span>
+          <h3>Dedicated SDRs</h3>
+          <p>Prospecting, outreach, and qualification against your ideal customer profile.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+          <h3>Digital marketing</h3>
+          <p>Paid and organic campaigns managed to your goals and budget, with clear reporting.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+          <h3>Content production</h3>
+          <p>Blog posts, landing pages, and sales collateral written in your voice.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
+          <h3>SEO execution</h3>
+          <p>Technical fixes, content optimization, and reporting tied to rankings and traffic.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          <h3>CRM discipline</h3>
+          <p>Clean pipelines, follow up sequences, and activity reporting you can trust.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <div class="band-black">
+    <div class="wrap">
+      <div class="band-head">
+        <span class="eyebrow on-dark"><span class="dot"></span> How it works</span>
+        <h2 style="margin-top:20px">From strategy to steady pipeline.</h2>
+        <p class="lede">A clear four step process. You always know what comes next.</p>
+      </div>
+      <div class="steps-list">
+        <div class="step-row"><span class="snum">01</span><div><h3>Define your ICP</h3><p>We document who you sell to and what good looks like.</p></div></div>
+        <div class="step-row"><span class="snum">02</span><div><h3>Build the team</h3><p>We recruit marketers and SDRs with relevant B2B experience.</p></div></div>
+        <div class="step-row"><span class="snum">03</span><div><h3>Launch campaigns</h3><p>Messaging, sequences, and content go live under your direction.</p></div></div>
+        <div class="step-row"><span class="snum">04</span><div><h3>Optimize weekly</h3><p>Regular reviews of activity, pipeline, and what is converting.</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROLES -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow"><span class="dot"></span> Roles we fill</span>
+        <h2>Growth roles we place every week.</h2>
+        <p>From SDRs to content, we build the full growth function.</p>
+      </div>
+      <div class="roles">
+        <span class="role-pill">Sales Development Representative</span>
+        <span class="role-pill">Account Executive</span>
+        <span class="role-pill">Digital Marketing Specialist</span>
+        <span class="role-pill">Content Writer</span>
+        <span class="role-pill">SEO Specialist</span>
+        <span class="role-pill">Social Media Manager</span>
+        <span class="role-pill">Email Marketing Specialist</span>
+        <span class="role-pill">Marketing Coordinator</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow"><span class="dot"></span> FAQ</span>
+        <h2>Growth questions, answered.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>How do SDRs learn our product? <span class="plus">+</span></summary>
+          <div class="faq-a">Structured onboarding on your ideal customer profile, messaging, objection handling, and CRM process.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Do you run paid ads? <span class="plus">+</span></summary>
+          <div class="faq-a">Yes, within budgets you set, with reporting tied to pipeline and cost per qualified lead.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Who owns the content and data? <span class="plus">+</span></summary>
+          <div class="faq-a">You do. Everything created lives in your accounts and systems.</div>
+        </details>
+        <details class="faq-item">
+          <summary>How do you report results? <span class="plus">+</span></summary>
+          <div class="faq-a">Weekly activity and pipeline reports, plus regular reviews against your targets.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Who employs the professionals? <span class="plus">+</span></summary>
+          <div class="faq-a">We do. Employment contracts, payroll, benefits administration, and compliance are our responsibility.</div>
+        </details>
+        <details class="faq-item">
+          <summary>What does it cost? <span class="plus">+</span></summary>
+          <div class="faq-a">One monthly investment per professional: $1,500 for Associates, $2,500 for Professionals, and from $5,000 for Experts. Recruitment is included, with no separate placement fees.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="sec" id="cta" style="padding-bottom:88px">
+    <div class="wrap">
+      <div class="cta-card">
+        <span class="cta-dot d1" aria-hidden="true"></span>
+        <span class="cta-dot d2" aria-hidden="true"></span>
+        <div class="cta-copy">
+          <span class="eyebrow"><span class="dot"></span> Get started</span>
+          <h2>Hire smarter. Scale faster.</h2>
+          <p>Your next customers are out there. Book a call and put a dedicated growth team to work within weeks.</p>
+          <div class="cta-row">
+            <a href="mailto:hello@remoteteampartners.com" class="btn btn-blue">Book a Discovery Call <span class="arr-c" set:html={arrow}></span></a>
+            <a href="../../#pricing" class="btn btn-white">See Pricing <span class="arr-c" set:html={arrow}></span></a>
+          </div>
+          <ul class="cta-points">
+            <li><span class="tick">{tick}</span> No recruitment fees, ever</li>
+            <li><span class="tick">{tick}</span> Replacement guarantee included</li>
+            <li><span class="tick">{tick}</span> Scale up or down as you grow</li>
+          </ul>
+        </div>
+        <div class="cta-media">
+          <img src="../../images/business-partnership-meeting.webp" alt="Business partnership meeting, two professionals shaking hands" width="800" height="600" loading="lazy" />
+          <div class="cta-float">
+            <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+            <div><strong>5 weeks to a working team</strong><span>from first call to fully onboarded</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Marketing & Sales",
+    "description": "Dedicated remote marketers, SDRs, and content professionals for US businesses. Grow your pipeline with a team that is exclusively yours.",
+    "provider": { "@type": "Organization", "name": "Remote Team Partners", "url": "https://remoteteampartners.com" },
+    "areaServed": "United States",
+    "url": "https://remoteteampartners.com/services/marketing-sales/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://remoteteampartners.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://remoteteampartners.com/#services" },
+      { "@type": "ListItem", "position": 3, "name": "Marketing & Sales", "item": "https://remoteteampartners.com/services/marketing-sales/" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "How do SDRs learn our product?", "acceptedAnswer": { "@type": "Answer", "text": "Structured onboarding on your ideal customer profile, messaging, objection handling, and CRM process." } },
+      { "@type": "Question", "name": "Do you run paid ads?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, within budgets you set, with reporting tied to pipeline and cost per qualified lead." } },
+      { "@type": "Question", "name": "Who owns the content and data?", "acceptedAnswer": { "@type": "Answer", "text": "You do. Everything created lives in your accounts and systems." } },
+      { "@type": "Question", "name": "How do you report results?", "acceptedAnswer": { "@type": "Answer", "text": "Weekly activity and pipeline reports, plus regular reviews against your targets." } },
+      { "@type": "Question", "name": "Who employs the professionals?", "acceptedAnswer": { "@type": "Answer", "text": "Remote Team Partners employs them, handling contracts, payroll, benefits, and compliance." } },
+      { "@type": "Question", "name": "What does it cost?", "acceptedAnswer": { "@type": "Answer", "text": "One monthly investment: $1,500 for Associates, $2,500 for Professionals, from $5,000 for Experts. Recruitment is included." } }
+    ]
+  }
+  </script>
+</BaseLayout>
