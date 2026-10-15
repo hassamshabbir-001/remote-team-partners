@@ -1,0 +1,127 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>';
+---
+
+<BaseLayout
+  title="Contact Us | Remote Team Partners"
+  description="Talk to Remote Team Partners about building your dedicated remote team. Send a message or book a discovery call, we reply within one business day."
+  path="/contact/"
+  base="../"
+>
+  <!-- HERO -->
+  <section class="hero hero-slim">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="../">Home</a><span class="sep">/</span>
+        <span class="cur">Contact</span>
+      </nav>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="dot"></span> Contact</span>
+          <h1>Let's talk about <span class="hl">your team</span>.</h1>
+          <p class="sub">Tell us what you need to build. We reply within one business day, usually much faster.</p>
+          <div class="hero-proof">
+            <div class="proof-item"><strong>1 business day</strong><span>response time</span></div>
+            <div class="proof-item"><strong>30 minutes</strong><span>discovery call</span></div>
+            <div class="proof-item"><strong>No fees</strong><span>to start the conversation</span></div>
+          </div>
+        </div>
+        <div class="contact-side">
+          <div class="contact-card">
+            <h3>Prefer email?</h3>
+            <p>Write to us directly and we will take it from there.</p>
+            <a class="contact-mail" href="mailto:hello@remoteteampartners.com">hello@remoteteampartners.com</a>
+          </div>
+          <div class="contact-card">
+            <h3>What happens next</h3>
+            <ol class="next-steps">
+              <li><strong>We reply</strong> within one business day.</li>
+              <li><strong>Discovery call:</strong> 30 minutes to map your needs.</li>
+              <li><strong>Team proposal:</strong> vetted candidates within days.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section class="sec" style="padding-bottom:88px">
+    <div class="wrap">
+      <div class="form-card">
+        <div class="sec-head left">
+          <span class="eyebrow"><span class="dot"></span> Send a message</span>
+          <h2>Start the conversation.</h2>
+          <p>Fill in the form and it opens your email app with everything ready to send.</p>
+        </div>
+        <form id="contact-form" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="cf-name">Full name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="field">
+              <label for="cf-email">Work email</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" required />
+            </div>
+            <div class="field">
+              <label for="cf-company">Company</label>
+              <input id="cf-company" name="company" type="text" autocomplete="organization" placeholder="Company Inc." />
+            </div>
+            <div class="field">
+              <label for="cf-service">What do you need?</label>
+              <select id="cf-service" name="service">
+                <option>Staffing and Recruitment</option>
+                <option>Accounting and Finance</option>
+                <option>Customer Support</option>
+                <option>Admin and Operations</option>
+                <option>IT and Software</option>
+                <option>Marketing and Sales</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="field field-full">
+              <label for="cf-msg">Your message</label>
+              <textarea id="cf-msg" name="message" rows="5" placeholder="Tell us about the roles you want to fill and your timeline." required></textarea>
+            </div>
+          </div>
+          <p class="form-error" id="form-error" hidden>Please add your name, a valid email, and a message.</p>
+          <button type="submit" class="btn btn-blue">Send Message <span class="arr-c" set:html={arrow}></span></button>
+          <p class="form-note">Submitting opens your email app addressed to hello@remoteteampartners.com with your message ready to send. Nothing is stored on this site.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    (function(){
+      var form = document.getElementById('contact-form');
+      if (!form) return;
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        var name = document.getElementById('cf-name').value.trim();
+        var email = document.getElementById('cf-email').value.trim();
+        var company = document.getElementById('cf-company').value.trim();
+        var service = document.getElementById('cf-service').value;
+        var message = document.getElementById('cf-msg').value.trim();
+        var err = document.getElementById('form-error');
+        var validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        if (!name || !validEmail || !message) {
+          err.hidden = false;
+          return;
+        }
+        err.hidden = true;
+        var subject = encodeURIComponent('Website enquiry: ' + service + ' (' + name + ')');
+        var body = encodeURIComponent(
+          'Name: ' + name + '\n' +
+          'Email: ' + email + '\n' +
+          (company ? 'Company: ' + company + '\n' : '') +
+          'Interested in: ' + service + '\n\n' +
+          message
+        );
+        window.location.href = 'mailto:hello@remoteteampartners.com?subject=' + subject + '&body=' + body;
+      });
+    })();
+  </script>
+</BaseLayout>

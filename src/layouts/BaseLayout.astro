@@ -57,8 +57,22 @@ const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
         <a href={base + "#process"}>How it works</a>
         <a href={base + "#pricing"}>Pricing</a>
         <a href={base + "#faq"}>FAQ</a>
+        <a href={base + "contact/"}>Contact</a>
       </nav>
-      <a href="#cta" class="btn btn-blue btn-sm nav-cta">Book a Call <span class="arr-c" set:html={arrow}></span></a>
+      <button class="nav-burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a href={base + "contact/"} class="btn btn-blue btn-sm nav-cta">Book a Call <span class="arr-c" set:html={arrow}></span></a>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="Mobile">
+        <a href={base + "#services"}>Services</a>
+        <a href={base + "#process"}>How it works</a>
+        <a href={base + "#pricing"}>Pricing</a>
+        <a href={base + "#faq"}>FAQ</a>
+        <a href={base + "contact/"}>Contact</a>
+      </nav>
+      <a href={base + "contact/"} class="btn btn-blue">Book a Discovery Call <span class="arr-c" set:html={arrow}></span></a>
     </div>
   </header>
   <main>
@@ -88,7 +102,15 @@ const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
             <li><a href={base + "#process"}>How it works</a></li>
             <li><a href={base + "#pricing"}>Pricing</a></li>
             <li><a href={base + "#faq"}>FAQ</a></li>
-            <li><a href="#cta">Contact</a></li>
+            <li><a href={base + "contact/"}>Contact us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href={base + "terms/"}>Terms of Service</a></li>
+            <li><a href={base + "privacy/"}>Privacy Policy</a></li>
+            <li><a href={base + "cookies/"}>Cookie Policy</a></li>
           </ul>
         </div>
       </div>
@@ -99,12 +121,39 @@ const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
     </div>
   </footer>
   <script>
+    // Smooth scroll for same-page anchors
     document.querySelectorAll('a[href^="#"]').forEach(function(a){
       a.addEventListener('click', function(e){
         var t = document.querySelector(a.getAttribute('href'));
         if (t) { e.preventDefault(); t.scrollIntoView({behavior:'smooth'}); }
       });
     });
+    // Mobile menu toggle
+    var burger = document.querySelector('.nav-burger');
+    var menu = document.getElementById('mobile-menu');
+    function closeMenu(){
+      if (!menu || menu.hidden) return;
+      menu.hidden = true;
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Open menu');
+    }
+    if (burger && menu) {
+      burger.addEventListener('click', function(){
+        var open = menu.hidden;
+        menu.hidden = !open;
+        burger.setAttribute('aria-expanded', String(open));
+        burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      });
+      menu.querySelectorAll('a').forEach(function(a){
+        a.addEventListener('click', closeMenu);
+      });
+      document.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') closeMenu();
+      });
+      window.addEventListener('resize', function(){
+        if (window.innerWidth >= 1020) closeMenu();
+      });
+    }
   </script>
 </body>
 </html>
