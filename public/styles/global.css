@@ -209,8 +209,7 @@ h3 {
   height: 44px;
   width: auto;
 }
-  font-family: var(--font-head);
-}
+
 .wordmark .wm-mark {
   display: inline-flex;
   align-items: center;
@@ -343,8 +342,7 @@ h3 {
   display: block;
   font-size: 15px;
   line-height: 1.25;
-  font-family: var(--font-head);
-}
+
 .float-card span {
   display: block;
   font-size: 13px;
@@ -569,6 +567,7 @@ h3 {
   }
 }
 @media (max-width: 640px) {
+  .footer { margin-top: 48px; }
   .brand-stack {
     grid-template-columns: 1fr;
   }
