@@ -23,11 +23,20 @@ const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonical} />
+  <meta property="og:image" content={site + "/og-cover.jpg"} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Remote Team Partners logo" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={site + "/og-cover.jpg"} />
   <meta name="robots" content="index, follow" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%232742F5'/><text x='50' y='68' font-size='52' font-weight='900' text-anchor='middle' font-family='Arial' fill='white'>R</text></svg>" />
+  <meta name="theme-color" content="#2742f5" />
+  <link rel="icon" href={base + "favicon.ico"} sizes="any" />
+  <link rel="icon" type="image/png" sizes="16x16" href={base + "images/favicon-16.png"} />
+  <link rel="icon" type="image/png" sizes="32x32" href={base + "images/favicon-32.png"} />
+  <link rel="apple-touch-icon" href={base + "apple-touch-icon.png"} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Outfit:wght@400;500;600;700;800&display=swap" />
@@ -39,6 +48,7 @@ const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
     "@type": "Organization",
     "name": "Remote Team Partners",
     "url": "https://remoteteampartners.com",
+    "logo": "https://remoteteampartners.com/images/logo-light.webp",
     "description": "Remote Team Partners builds dedicated remote teams for US businesses, covering staffing, recruitment, accounting, HR, payroll and ongoing team management.",
     "areaServed": "United States",
     "contactPoint": { "@type": "ContactPoint", "contactType": "sales", "areaServed": "US" }
@@ -49,8 +59,7 @@ const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
   <header class="nav">
     <div class="nav-in">
       <a href={base || "./"} class="wordmark" aria-label="Remote Team Partners home">
-        <span class="wm-mark">R</span>
-        <span>Remote Team Partners</span>
+        <img src={base + "images/logo-light.webp"} alt="Remote Team Partners" width="186" height="34" class="wordmark-logo" loading="eager" fetchpriority="high" decoding="async" />
       </a>
       <nav class="nav-links" aria-label="Primary">
         <a href={base + "#services"}>Services</a>
@@ -82,7 +91,7 @@ const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
     <div class="wrap">
       <div class="foot-grid">
         <div>
-          <div class="foot-brand"><span class="wm-mark">R</span> Remote Team Partners</div>
+          <div class="foot-brand"><img src={base + "images/logo-dark.webp"} alt="Remote Team Partners" width="186" height="34" class="foot-logo" loading="lazy" decoding="async" /></div>
           <p>Dedicated remote teams for US businesses. You lead your people, we build, support, and manage the workforce behind them.</p>
         </div>
         <div>
