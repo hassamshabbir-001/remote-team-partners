@@ -1298,7 +1298,7 @@ h3 {
 }
 @media (max-width: 420px) {
   .wordmark { font-size: 16px; gap: 8px; }
-  .wordmark-logo { height: 34px; }
+  .wordmark-logo { height: 40px; }
   .foot-logo { height: 38px; }
   .wordmark .wm-mark { width: 36px; height: 36px; font-size: 16px; }
   .nav-in { padding: 6px 6px 6px 16px; gap: 12px; }
