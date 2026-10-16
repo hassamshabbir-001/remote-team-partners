@@ -571,6 +571,18 @@ h3 {
 }
 @media (max-width: 640px) {
   .footer { margin-top: 48px; }
+  /* fix overlapping service cards on mobile */
+  .brand-stack .brand-info,
+  .brand-third .brand-info,
+  .brand-large .brand-info {
+    margin-top: -20px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .brand-info {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
   .brand-stack {
     grid-template-columns: 1fr;
   }
