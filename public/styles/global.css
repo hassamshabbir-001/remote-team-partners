@@ -192,35 +192,40 @@ h3 {
 .wordmark {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   text-decoration: none;
+  line-height: 1.1;
+  flex: none;
+}
+.logo-mark {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  display: block;
+}
+.logo-word {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.04;
+}
+.logo-word strong {
+  font-family: var(--font-head);
   font-weight: 800;
   font-size: 19px;
-  letter-spacing: -0.01em;
-  line-height: 1.1;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  white-space: nowrap;
 }
-.wordmark-logo {
-  display: block;
-  height: 40px;
-  width: auto;
+.logo-word span {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--blue);
+  white-space: nowrap;
 }
-.foot-logo {
-  display: block;
-  height: 44px;
-  width: auto;
-}
-
-.wordmark .wm-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 999px;
-  background: var(--blue);
-  flex: none;
-  font-weight: 800;
-  font-size: 18px;
+.foot-brand .logo-word strong {
   color: #ffffff;
 }
 .nav-links {
@@ -571,25 +576,17 @@ h3 {
 }
 @media (max-width: 640px) {
   .footer { margin-top: 48px; }
-  /* fix overlapping service cards on mobile */
+  /* separated service cards on mobile: image on top, info box below, clear gaps */
+  .brands { gap: 36px; }
+  .brand-stack { gap: 36px; }
+  .brand-info { margin: 12px 0 0; }
   .brand-stack .brand-info,
   .brand-third .brand-info,
-  .brand-large .brand-info {
-    margin-top: -20px;
-    margin-left: 12px;
-    margin-right: 12px;
-  }
-  .brand-info {
-    margin-left: 12px;
-    margin-right: 12px;
-  }
-  .brand-stack {
-    grid-template-columns: 1fr;
-  }
-  .brand-info {
-    margin-left: 14px;
-    margin-right: 14px;
-  }
+  .brand-large .brand-info { margin: 12px 0 0; }
+  /* stack-card images render in normal flow on mobile (no absolute-position collapse) */
+  .brand-stack .brand-card { flex: none; }
+  .brand-stack .brand-img { flex: none; min-height: 0; }
+  .brand-stack .brand-img img { position: static; height: auto; aspect-ratio: 16 / 10; }
 }
 
 /* ============ ROLE PILLS ============ */
@@ -1088,18 +1085,6 @@ h3 {
   align-items: center;
   gap: 10px;
 }
-.foot-brand .wm-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 999px;
-  background: var(--blue);
-  font-weight: 800;
-  font-size: 16px;
-  color: #ffffff;
-}
 .footer p {
   font-size: 15px;
   max-width: 340px;
@@ -1309,10 +1294,10 @@ h3 {
   .nav-cta { margin-left: auto; }
 }
 @media (max-width: 420px) {
-  .wordmark { font-size: 16px; gap: 8px; }
-  .wordmark-logo { height: 40px; }
-  .foot-logo { height: 38px; }
-  .wordmark .wm-mark { width: 36px; height: 36px; font-size: 16px; }
+  .wordmark { gap: 8px; }
+  .logo-mark { width: 34px; height: 34px; }
+  .logo-word strong { font-size: 16px; }
+  .logo-word span { font-size: 9px; }
   .nav-in { padding: 6px 6px 6px 16px; gap: 12px; }
   .nav-cta { font-size: 14px; }
 }
@@ -1436,7 +1421,8 @@ h3 {
   /* service images: less towering on phones */
   .brand-large .brand-img img { aspect-ratio: 16 / 11; }
   .brand-stack .brand-img { min-height: 0; aspect-ratio: 16 / 10; }
-  .brand-stack .brand-info { margin-top: -48px; }
+  /* -48px stale rule removed: earlier 640px block already sets -20px for all card types;
+     keeping this would override it (equal specificity, later in source order) */
   /* hero proof stats: compact 3-col row on phones */
   .hero-proof {
     display: grid;

@@ -34,6 +34,7 @@ const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#2742f5" />
   <link rel="icon" href={base + "favicon.ico"} sizes="any" />
+  <link rel="icon" type="image/svg+xml" href={base + "favicon.svg"} />
   <link rel="icon" type="image/png" sizes="16x16" href={base + "images/favicon-16.png"} />
   <link rel="icon" type="image/png" sizes="32x32" href={base + "images/favicon-32.png"} />
   <link rel="apple-touch-icon" href={base + "apple-touch-icon.png"} />
@@ -59,7 +60,13 @@ const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
   <header class="nav">
     <div class="nav-in">
       <a href={base || "./"} class="wordmark" aria-label="Remote Team Partners home">
-        <img src={base + "images/logo-light.svg"} alt="Remote Team Partners" width="186" height="34" class="wordmark-logo" loading="eager" fetchpriority="high" decoding="async" />
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <circle cx="22" cy="19" r="10" fill="#2742F5"/>
+          <path d="M5 56v-8c0-9.5 7.5-17 17-17s17 7.5 17 17v8z" fill="#2742F5"/>
+          <circle cx="44" cy="23" r="8" fill="#10141F"/>
+          <path d="M31 56v-6c0-7.5 5.5-13 13-13s13 5.5 13 13v6z" fill="#10141F"/>
+        </svg>
+        <span class="logo-word"><strong>Remote Team</strong><span>Partners</span></span>
       </a>
       <nav class="nav-links" aria-label="Primary">
         <a href={base + "#services"}>Services</a>
@@ -91,7 +98,15 @@ const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
     <div class="wrap">
       <div class="foot-grid">
         <div>
-          <div class="foot-brand"><img src={base + "images/logo-dark.svg"} alt="Remote Team Partners" width="186" height="34" class="foot-logo" loading="lazy" decoding="async" /></div>
+          <div class="foot-brand">
+            <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+              <circle cx="22" cy="19" r="10" fill="#2742F5"/>
+              <path d="M5 56v-8c0-9.5 7.5-17 17-17s17 7.5 17 17v8z" fill="#2742F5"/>
+              <circle cx="44" cy="23" r="8" fill="#ffffff"/>
+              <path d="M31 56v-6c0-7.5 5.5-13 13-13s13 5.5 13 13v6z" fill="#ffffff"/>
+            </svg>
+            <span class="logo-word"><strong>Remote Team</strong><span>Partners</span></span>
+          </div>
           <p>Dedicated remote teams for US businesses. You lead your people, we build, support, and manage the workforce behind them.</p>
         </div>
         <div>
