@@ -1290,8 +1290,9 @@ h3 {
   margin-top: 8px;
 }
 @media (max-width: 1019px) {
-  .nav-burger { display: inline-flex; }
-  .nav-cta { margin-left: auto; }
+  .nav-burger { display: inline-flex; margin-left: auto; }
+  /* header CTA hidden on mobile (BJS pattern): the button lives at the bottom of the mobile menu */
+  .nav-cta { display: none; }
 }
 @media (max-width: 420px) {
   .wordmark { gap: 8px; }
