@@ -436,6 +436,7 @@ h3 {
 }
 .brand-img img {
   width: 100%;
+  height: auto;
   object-fit: cover;
   transition: transform 0.35s ease;
 }
@@ -1424,4 +1425,14 @@ h3 {
   .brand-large .brand-img img { aspect-ratio: 16 / 11; }
   .brand-stack .brand-img { min-height: 0; aspect-ratio: 16 / 10; }
   .brand-stack .brand-info { margin-top: -48px; }
+  /* hero proof stats: compact 3-col row on phones */
+  .hero-proof {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding-top: 20px;
+    margin-top: 28px;
+  }
+  .proof-item strong { font-size: 19px; }
+  .proof-item span { font-size: 12.5px; line-height: 1.4; }
 }
