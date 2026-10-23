@@ -1,0 +1,123 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const posts = [
+  {
+    slug: "virtual-assistant-cost",
+    tag: "Pricing",
+    title: "How Much Does a Virtual Assistant Cost in 2026?",
+    excerpt: "Hourly freelancers, agencies, and dedicated remote professionals all price differently. Here is what each model really costs, and what drives the number up or down.",
+    img: "../images/admin-operations-services.webp",
+    imgMobile: "../images/admin-operations-services-mobile.webp",
+    alt: "Virtual assistant cost guide, organized remote workspace",
+    date: "October 23, 2026",
+    read: "8 min read",
+  },
+  {
+    slug: "remote-team-vs-in-house-cost",
+    tag: "Cost Comparison",
+    title: "Remote Team vs In-House Team: The True Cost Comparison",
+    excerpt: "Salary is only part of what an in-house hire costs. Payroll taxes, benefits, recruiting, equipment, and management time change the math completely.",
+    img: "../images/business-partnership-meeting.webp",
+    imgMobile: "../images/business-partnership-meeting-mobile.webp",
+    alt: "Remote team vs in-house team cost comparison, business partners reviewing numbers",
+    date: "October 23, 2026",
+    read: "9 min read",
+  },
+  {
+    slug: "how-to-hire-remote-employees",
+    tag: "Hiring Guide",
+    title: "How to Hire Remote Employees: A Step-by-Step Guide for US Businesses",
+    excerpt: "From defining the role to the first 30 days, the exact process that produces remote hires who stay, perform, and integrate with your team.",
+    img: "../images/staffing-recruitment-services.webp",
+    imgMobile: "../images/staffing-recruitment-services-mobile.webp",
+    alt: "How to hire remote employees, recruitment and selection process",
+    date: "October 23, 2026",
+    read: "10 min read",
+  },
+  {
+    slug: "nearshore-vs-offshore-vs-onshore",
+    tag: "Hiring Models",
+    title: "Nearshore vs Offshore vs Onshore: Which Hiring Model Fits Your Business?",
+    excerpt: "Time zones, cost, control, and communication all trade off differently across the three models. A clear framework for choosing the right one.",
+    img: "../images/remote-team-video-call.webp",
+    imgMobile: "../images/remote-team-video-call-mobile.webp",
+    alt: "Nearshore vs offshore vs onshore hiring models, remote team on a video call",
+    date: "October 23, 2026",
+    read: "8 min read",
+  },
+  {
+    slug: "signs-you-need-a-virtual-assistant",
+    tag: "Growth",
+    title: "9 Signs Your Business Needs a Dedicated Remote Team",
+    excerpt: "Founders usually wait too long. If three or more of these signs sound familiar, the workload problem is already costing you growth.",
+    img: "../images/customer-support-services.webp",
+    imgMobile: "../images/customer-support-services-mobile.webp",
+    alt: "Signs your business needs a dedicated remote team, busy support inbox",
+    date: "October 23, 2026",
+    read: "6 min read",
+  },
+];
+---
+
+<BaseLayout
+  title="Blog | Remote Staffing Guides and Cost Breakdowns | Remote Team Partners"
+  description="Practical guides on remote hiring costs, virtual assistant pricing, hiring models, and building dedicated remote teams for US businesses."
+  path="/blog/"
+  base="../"
+>
+  <section class="hero hero-slim">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="../">Home</a><span class="sep">/</span>
+        <span class="cur">Blog</span>
+      </nav>
+      <div class="sec-head left" style="max-width:720px">
+        <span class="eyebrow"><span class="dot"></span> The Remote Team Blog</span>
+        <h1 style="font-size:clamp(2.2rem,4.5vw,3.4rem);margin-top:18px">Straight answers on remote hiring, costs, and teams that work.</h1>
+        <p>No fluff and no sales talk. Just the numbers, models, and processes US businesses use to build dedicated remote teams.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:8px">
+    <div class="wrap">
+      <div class="post-grid">
+        {posts.map((p) => (
+          <article class="post-card">
+            <a class="pc-img" href={`../blog/${p.slug}/`} aria-label={p.title}>
+              <img src={p.img} srcset={`${p.imgMobile} 640w, ${p.img} 1280w`} sizes="(max-width: 640px) 640px, 640px" alt={p.alt} width="640" height="400" loading="lazy" />
+            </a>
+            <div class="pc-body">
+              <span class="post-tag">{p.tag}</span>
+              <h3><a href={`../blog/${p.slug}/`}>{p.title}</a></h3>
+              <p>{p.excerpt}</p>
+              <span class="post-meta">{p.date} · {p.read}</span>
+              <a class="post-more" href={`../blog/${p.slug}/`}>Read the guide</a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Remote Team Partners Blog",
+    "url": "https://www.remoteteampartners.com/blog/",
+    "description": "Practical guides on remote hiring costs, virtual assistant pricing, hiring models, and building dedicated remote teams for US businesses.",
+    "publisher": { "@type": "Organization", "name": "Remote Team Partners", "url": "https://www.remoteteampartners.com" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.remoteteampartners.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.remoteteampartners.com/blog/" }
+    ]
+  }
+  </script>
+</BaseLayout>

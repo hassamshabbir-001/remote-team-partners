@@ -1,0 +1,216 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>';
+const tick = "✓";
+---
+
+<BaseLayout
+  title="Remote Teams for Law Firms | Remote Team Partners"
+  description="Dedicated remote legal assistants, intake specialists, and billing support for law firms. More billable hours for attorneys, less admin weight on your staff."
+  path="/industries/law-firms/"
+  base="../../"
+>
+  <section class="hero hero-slim">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="../../">Home</a><span class="sep">/</span>
+        <span class="cur">Industries</span><span class="sep">/</span>
+        <span class="cur">Law Firms</span>
+      </nav>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="dot"></span> Industries · Law Firms</span>
+          <h1>Attorneys bill. <span class="hl">We</span> handle everything around it.</h1>
+          <p class="sub">Dedicated remote legal assistants, client intake specialists, and billing support who protect your attorneys' time and keep every matter moving.</p>
+          <div class="hero-ctas">
+            <a href="../../contact/" class="btn btn-blue">Book a Discovery Call <span class="arr-c" set:html={arrow}></span></a>
+            <a href="../../#pricing" class="btn btn-white">See Pricing <span class="arr-c" set:html={arrow}></span></a>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-item"><strong>5 weeks</strong><span>first call to working team</span></div>
+            <div class="proof-item"><strong>1 invoice</strong><span>predictable monthly cost</span></div>
+            <div class="proof-item"><strong>Guaranteed</strong><span>replacement on every hire</span></div>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="ph">
+            <img src="../../images/accounting-finance-services.webp" srcset="../../images/accounting-finance-services-mobile.webp 640w, ../../images/accounting-finance-services.webp 1280w" sizes="(max-width: 640px) 640px, 1280px" alt="Remote legal support professionals handling law firm administration" width="960" height="640" loading="eager" fetchpriority="high" />
+          </div>
+          <div class="float-card fc-1">
+            <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M3 12h3M18 12h3"/><circle cx="12" cy="12" r="3.2"/></svg></span>
+            <div><strong>Intake answered fast</strong><span>every new matter captured</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head left">
+        <span class="eyebrow"><span class="dot"></span> What you get</span>
+        <h2>The non-billable mountain, moved off your attorneys.</h2>
+        <p>Every hour an attorney spends on intake, scheduling, or document busywork is an hour that cannot be billed.</p>
+      </div>
+      <div class="deliver-grid">
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.79.66 2.64a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.44-1.23a2 2 0 0 1 2.11-.45c.85.32 1.74.54 2.64.66A2 2 0 0 1 22 16.92z"/></svg></span>
+          <h3>Client intake</h3>
+          <p>Calls and web inquiries answered promptly, conflict-check information gathered, and consultations booked before prospects call the next firm.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></span>
+          <h3>Legal administrative support</h3>
+          <p>Document formatting and assembly, file organization, deadline calendaring, and correspondence handled to your templates.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 10h20"/></svg></span>
+          <h3>Billing and collections support</h3>
+          <p>Time entry cleanup, pre-bill review support, invoice issuance, and polite, persistent accounts receivable follow-up.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+          <h3>Calendar and case coordination</h3>
+          <p>Hearings, depositions, and deadlines tracked across the firm, with reminders that fire before anything becomes urgent.</p>
+        </div>
+        <div class="deliver-card">
+          <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <h3>Confidentiality by design</h3>
+          <p>Signed NDAs, role-based access to your systems only, and confidentiality training as part of onboarding for every placement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band-black">
+    <div class="wrap">
+      <div class="band-head">
+        <span class="eyebrow on-dark"><span class="dot"></span> How it works</span>
+        <h2 style="margin-top:20px">Scoped to your practice areas and your tools.</h2>
+        <p class="lede">Family law, personal injury, immigration, estate planning: the workflows differ, the staffing discipline does not.</p>
+      </div>
+      <div class="steps-list">
+        <div class="step-row"><span class="snum">01</span><div><h3>Audit the admin load</h3><p>We identify which non-billable work consumes attorney and paralegal hours.</p></div></div>
+        <div class="step-row"><span class="snum">02</span><div><h3>Design the roles</h3><p>Intake, legal assistant, or billing support, with access levels and duties in writing.</p></div></div>
+        <div class="step-row"><span class="snum">03</span><div><h3>You interview</h3><p>Meet candidates with legal office experience and choose your people.</p></div></div>
+        <div class="step-row"><span class="snum">04</span><div><h3>Onboard securely</h3><p>NDAs signed, access provisioned, and a structured first month inside your practice management system.</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow"><span class="dot"></span> Roles we fill</span>
+        <h2>Law firm roles we place every week.</h2>
+        <p>Support staff trained on legal workflows and confidentiality.</p>
+      </div>
+      <div class="roles">
+        <span class="role-pill">Legal Assistant</span>
+        <span class="role-pill">Client Intake Specialist</span>
+        <span class="role-pill">Virtual Paralegal Assistant</span>
+        <span class="role-pill">Legal Secretary</span>
+        <span class="role-pill">Billing Coordinator</span>
+        <span class="role-pill">Case Manager Assistant</span>
+        <span class="role-pill">Document Specialist</span>
+        <span class="role-pill">Reception and Scheduling</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="faq" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow"><span class="dot"></span> FAQ</span>
+        <h2>Law firm staffing questions, answered.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>How is client confidentiality protected? <span class="plus">+</span></summary>
+          <div class="faq-a">Every professional signs an NDA before starting, receives confidentiality training during onboarding, and gets access only to the systems their role requires. You control the accounts and can revoke access instantly, exactly as with any employee.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Which practice management tools do they know? <span class="plus">+</span></summary>
+          <div class="faq-a">Clio, PracticePanther, MyCase, Filevine, and Smokeball are the most common, along with Microsoft 365 and Google Workspace. We match candidates to your stack and train on your firm's templates.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Can intake staff really convert more consultations? <span class="plus">+</span></summary>
+          <div class="faq-a">Speed is the lever. Prospects typically contact more than one firm, and the firm that responds first and books the consultation wins the matter. Dedicated intake coverage means inquiries are answered in minutes during business hours, not the next morning.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Do they give legal advice or draft substantive documents? <span class="plus">+</span></summary>
+          <div class="faq-a">No. Remote support staff handle administrative, intake, and billing work under attorney supervision. Substantive legal work stays with your licensed attorneys, which is exactly the division that protects both quality and compliance.</div>
+        </details>
+        <details class="faq-item">
+          <summary>What does it cost? <span class="plus">+</span></summary>
+          <div class="faq-a">$1,500 a month for Associates, $2,500 for Professionals, and from $5,000 for Experts per dedicated professional, recruitment included. One recovered billable hour a week often covers a large share of that, as the <a href="../../blog/remote-team-vs-in-house-cost/">cost comparison</a> shows.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="cta" style="padding-top:0;padding-bottom:88px">
+    <div class="wrap">
+      <div class="cta-card">
+        <span class="cta-dot d1" aria-hidden="true"></span>
+        <span class="cta-dot d2" aria-hidden="true"></span>
+        <div class="cta-copy">
+          <span class="eyebrow"><span class="dot"></span> Get started</span>
+          <h2>Give your attorneys their hours back.</h2>
+          <p>Tell us where the admin work piles up in your firm. We will scope the roles that clear it, with exact costs on the call.</p>
+          <div class="cta-row">
+            <a href="../../contact/" class="btn btn-blue">Book a Discovery Call <span class="arr-c" set:html={arrow}></span></a>
+            <a href="../../services/admin-operations/" class="btn btn-white">Admin &amp; Operations <span class="arr-c" set:html={arrow}></span></a>
+          </div>
+          <ul class="cta-points">
+            <li><span class="tick">{tick}</span> No recruitment fees, ever</li>
+            <li><span class="tick">{tick}</span> Replacement guarantee included</li>
+            <li><span class="tick">{tick}</span> NDA and confidentiality training included</li>
+          </ul>
+        </div>
+        <div class="cta-media">
+          <img src="../../images/business-partnership-meeting.webp" alt="Business partnership meeting, two professionals shaking hands" width="800" height="600" loading="lazy" />
+          <div class="cta-float">
+            <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+            <div><strong>5 weeks to a working team</strong><span>from first call to fully onboarded</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Remote Teams for Law Firms",
+    "description": "Dedicated remote legal assistants, intake specialists, and billing support for law firms.",
+    "provider": { "@type": "Organization", "name": "Remote Team Partners", "url": "https://www.remoteteampartners.com" },
+    "areaServed": "United States",
+    "url": "https://www.remoteteampartners.com/industries/law-firms/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.remoteteampartners.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Law Firms", "item": "https://www.remoteteampartners.com/industries/law-firms/" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "How is client confidentiality protected?", "acceptedAnswer": { "@type": "Answer", "text": "Every professional signs an NDA, receives confidentiality training, and gets access only to the systems their role requires. You control the accounts and can revoke access instantly." } },
+      { "@type": "Question", "name": "Which practice management tools do they know?", "acceptedAnswer": { "@type": "Answer", "text": "Clio, PracticePanther, MyCase, Filevine, and Smokeball are the most common. Candidates are matched to your stack and trained on your firm's templates." } },
+      { "@type": "Question", "name": "Can intake staff really convert more consultations?", "acceptedAnswer": { "@type": "Answer", "text": "Speed is the lever. Dedicated intake coverage means inquiries are answered in minutes during business hours, and the firm that books the consultation first usually wins the matter." } },
+      { "@type": "Question", "name": "Do they give legal advice or draft substantive documents?", "acceptedAnswer": { "@type": "Answer", "text": "No. Remote support staff handle administrative, intake, and billing work under attorney supervision. Substantive legal work stays with licensed attorneys." } },
+      { "@type": "Question", "name": "What does it cost?", "acceptedAnswer": { "@type": "Answer", "text": "$1,500 a month for Associates, $2,500 for Professionals, and from $5,000 for Experts per dedicated professional, recruitment included." } }
+    ]
+  }
+  </script>
+</BaseLayout>
