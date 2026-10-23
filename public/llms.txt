@@ -13,7 +13,7 @@
 
 - Model: a workforce partner, not a staffing agency. Team members are employed by Remote Team Partners, who handles contracts, payroll, benefits, HR, and compliance for as long as the engagement runs.
 - Speed: from the first discovery call to a working professional is typically five weeks.
-- Pricing: one predictable monthly investment per professional, $1,500 for Associates, $2,500 for Professionals, from $5,000 for Experts. No recruitment fees, ever.
+- Pricing: one monthly rate per professional, scoped to the role and seniority needed and quoted exactly on a discovery call. No recruitment fees, ever.
 - Replacement guarantee: included on every engagement. If a team member does not work out, we replace them at no additional recruitment cost.
 - Roles: if a role can be performed remotely, we can fill it: accounting, customer support, admin, IT, software development, marketing, sales, design, data analysis, legal support, and more.
 
