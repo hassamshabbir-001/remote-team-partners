@@ -6,7 +6,7 @@ export interface Props {
   base?: string;
 }
 const { title, description, path = "/", base = "" } = Astro.props;
-const site = "https://remoteteampartners.com";
+const site = "https://www.remoteteampartners.com";
 const canonical = `${site}${path}`;
 const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>';
 ---
@@ -32,6 +32,7 @@ const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={site + "/og-cover.jpg"} />
   <meta name="robots" content="index, follow" />
+  <meta name="google-site-verification" content="sCPrHR8kxMJzDmDmGby7Ve9Nvg3gQlTfPvcw-IGOlS0" />
   <meta name="theme-color" content="#2742f5" />
   <link rel="icon" href={base + "favicon.ico"} sizes="any" />
   <link rel="icon" type="image/svg+xml" href={base + "favicon.svg"} />
@@ -48,8 +49,8 @@ const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Remote Team Partners",
-    "url": "https://remoteteampartners.com",
-    "logo": "https://remoteteampartners.com/images/logo-light.webp",
+    "url": "https://www.remoteteampartners.com",
+    "logo": "https://www.remoteteampartners.com/images/logo-light.webp",
     "description": "Remote Team Partners builds dedicated remote teams for US businesses, covering staffing, recruitment, accounting, HR, payroll and ongoing team management.",
     "areaServed": "United States",
     "contactPoint": { "@type": "ContactPoint", "contactType": "sales", "areaServed": "US" }
