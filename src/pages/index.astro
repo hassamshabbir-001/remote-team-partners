@@ -19,7 +19,7 @@ const tick = "✓";
           <p class="sub">We recruit, employ, onboard, and manage exceptional remote professionals who work exclusively for you. You lead the work, we handle everything behind it.</p>
           <div class="hero-ctas">
             <a href="#cta" class="btn btn-blue">Book a Discovery Call <span class="arr-c" set:html={arrow}></span></a>
-            <a href="#pricing" class="btn btn-white">See Pricing <span class="arr-c" set:html={arrow}></span></a>
+            <a href="contact/" class="btn btn-white">Get a Quote <span class="arr-c" set:html={arrow}></span></a>
           </div>
           <div class="hero-proof">
             <div class="proof-item"><strong>5 weeks</strong><span>first call to working team</span></div>
@@ -187,61 +187,6 @@ const tick = "✓";
     </div>
   </div>
 
-  <!-- PRICING -->
-  <section class="sec" id="pricing">
-    <div class="wrap">
-      <div class="sec-head left">
-        <span class="eyebrow"><span class="dot"></span> Pricing</span>
-        <h2>Simple. Transparent. Predictable.</h2>
-        <p>One monthly investment covers recruitment, employment, HR, payroll, and ongoing support. No recruitment fees. No hidden costs.</p>
-      </div>
-      <div class="price-grid">
-        <div class="price-card">
-          <span class="price-tag">Associate</span>
-          <h3>Core Associate</h3>
-          <div class="price-amount">$1,500<small>/month</small></div>
-          <ul>
-            <li><span class="tick">{tick}</span> Up to 2 years of experience</li>
-            <li><span class="tick">{tick}</span> Dedicated professional, exclusively yours</li>
-            <li><span class="tick">{tick}</span> Recruitment and vetting included</li>
-            <li><span class="tick">{tick}</span> HR administration and payroll</li>
-            <li><span class="tick">{tick}</span> Replacement guarantee</li>
-          </ul>
-          <a href="#cta" class="btn btn-black">Choose Associate <span class="arr-c" set:html={arrow}></span></a>
-        </div>
-        <div class="price-card dark">
-          <span class="price-tag">Most popular</span>
-          <h3>Core Professional</h3>
-          <div class="price-amount">$2,500<small>/month</small></div>
-          <ul>
-            <li><span class="tick">{tick}</span> 2 to 6 years of experience</li>
-            <li><span class="tick">{tick}</span> Dedicated professional, exclusively yours</li>
-            <li><span class="tick">{tick}</span> Recruitment and vetting included</li>
-            <li><span class="tick">{tick}</span> HR administration and payroll</li>
-            <li><span class="tick">{tick}</span> Compliance support</li>
-            <li><span class="tick">{tick}</span> Replacement guarantee</li>
-          </ul>
-          <a href="#cta" class="btn btn-blue">Choose Professional <span class="arr-c" set:html={arrow}></span></a>
-        </div>
-        <div class="price-card">
-          <span class="price-tag">Expert</span>
-          <h3>Core Expert</h3>
-          <div class="price-amount" style="font-size:36px">From $5,000<small>/month</small></div>
-          <ul>
-            <li><span class="tick">{tick}</span> 6+ years of experience</li>
-            <li><span class="tick">{tick}</span> Dedicated professional, exclusively yours</li>
-            <li><span class="tick">{tick}</span> Recruitment and vetting included</li>
-            <li><span class="tick">{tick}</span> HR administration and payroll</li>
-            <li><span class="tick">{tick}</span> Personalized client success support</li>
-            <li><span class="tick">{tick}</span> Replacement guarantee</li>
-          </ul>
-          <a href="#cta" class="btn btn-black">Choose Expert <span class="arr-c" set:html={arrow}></span></a>
-        </div>
-      </div>
-      <p class="price-note">Every plan includes employee engagement, ongoing support, and the option to scale up or down as you grow.</p>
-    </div>
-  </section>
-
   <!-- INDUSTRIES -->
   <section class="sec" id="industries">
     <div class="wrap">
@@ -364,7 +309,7 @@ const tick = "✓";
         </details>
         <details class="faq-item">
           <summary>How does pricing work? <span class="plus">+</span></summary>
-          <div class="faq-a">One predictable monthly investment per professional: $1,500 for Associates, $2,500 for Professionals, and from $5,000 for Experts. Everything else, recruitment, HR, payroll, compliance, support, is included.</div>
+          <div class="faq-a">One predictable monthly investment per professional, scoped to the role and seniority you need. Recruitment, HR, payroll, compliance, and support are all included. Book a discovery call and we will give you the exact figure for your role on the call.</div>
         </details>
       </div>
     </div>
@@ -382,7 +327,7 @@ const tick = "✓";
           <p>The question is no longer whether to grow your team, it is how quickly you can build the right one. Schedule your discovery call today.</p>
           <div class="cta-row">
             <a href="mailto:hello@remoteteampartners.com" class="btn btn-blue">Book a Discovery Call <span class="arr-c" set:html={arrow}></span></a>
-            <a href="#pricing" class="btn btn-white">See Pricing <span class="arr-c" set:html={arrow}></span></a>
+            <a href="contact/" class="btn btn-white">Get a Quote <span class="arr-c" set:html={arrow}></span></a>
           </div>
           <ul class="cta-points">
             <li><span class="tick">{tick}</span> No recruitment fees, ever</li>
@@ -410,7 +355,7 @@ const tick = "✓";
       {"@type": "Question", "name": "How quickly can my team start?", "acceptedAnswer": {"@type": "Answer", "text": "From the first discovery call to a working professional is typically five weeks."}},
       {"@type": "Question", "name": "Who employs the team members?", "acceptedAnswer": {"@type": "Answer", "text": "Remote Team Partners employs them, handling contracts, payroll, benefits, and compliance."}},
       {"@type": "Question", "name": "What if a team member does not work out?", "acceptedAnswer": {"@type": "Answer", "text": "Every engagement includes a replacement guarantee."}},
-      {"@type": "Question", "name": "How does pricing work?", "acceptedAnswer": {"@type": "Answer", "text": "One predictable monthly investment: $1,500 for Associates, $2,500 for Professionals, from $5,000 for Experts."}}
+      { "@type": "Question", "name": "How does pricing work?", "acceptedAnswer": { "@type": "Answer", "text": "One predictable monthly investment per professional, scoped to the role and seniority you need, with recruitment, HR, payroll, compliance, and support included. Exact figures are quoted on a discovery call." } }
     ]
   }
   </script>
